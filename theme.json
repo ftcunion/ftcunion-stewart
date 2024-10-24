@@ -189,9 +189,15 @@
 					"fontFamily": "var(--wp--preset--font-family--cormorant)"
 				}
 			},
+			"core/site-tagline": {
+				"typography": {
+					"fontSize": "var(--wp--preset--font-size--small)"
+				}
+			},
 			"core/site-title": {
 				"typography": {
-					"fontFamily": "var(--wp--preset--font-family--cormorant)"
+					"fontFamily": "var(--wp--preset--font-family--cormorant)",
+					"fontSize": "var(--wp--preset--font-size--gigantic)"
 				},
 				"elements": {
 					"link": {
@@ -223,6 +229,7 @@
 				"right": "var:preset|spacing|50"
 			}
 		},
+		"css": "/* Hide some nav elements on mobile */\n@media(max-width: 599px){\n  header .wp-block-spacer {\n    display: none;\n  }\n  .mobile-flex > .wp-block-site-title {\n    font-size: var(--wp--preset--font-size--huge);\n  }\n  .mobile-flex {\n    display: flex;\n    flex-direction: row;\n    flex-wrap: wrap;\n    justify-content: space-between;\n    align-items: center;\n  }\n  .mobile-hide {\n    display: none;\n  }\n}",
 		"elements": {
 			"button": {
 				"color": {
