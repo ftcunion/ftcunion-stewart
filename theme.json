@@ -297,6 +297,11 @@
 	},
 	"templateParts": [
 		{
+			"name": "sidebar",
+			"title": "Sidebar",
+			"area": "uncategorized"
+		},
+		{
 			"area": "footer",
 			"name": "footer",
 			"title": "Footer"
