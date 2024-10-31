@@ -15,16 +15,16 @@
     <hr class="wp-block-separator has-css-opacity has-text-color alignwide is-style-wide" />
     <!-- /wp:separator -->
 
-    <!-- wp:columns {"verticalAlignment":"center","isStackedOnMobile":false,"align":"wide","style":{"spacing":{"margin":{"top":"0","bottom":"0"}}}} -->
-    <div class="wp-block-columns alignwide are-vertically-aligned-center is-not-stacked-on-mobile" style="margin-top:0;margin-bottom:0">
+    <!-- wp:columns {"verticalAlignment":"center","align":"wide","style":{"spacing":{"margin":{"top":"0","bottom":"0"}}}} -->
+    <div class="wp-block-columns alignwide are-vertically-aligned-center" style="margin-top:0;margin-bottom:0">
         <!-- wp:column {"verticalAlignment":"center","width":"72%"} -->
         <div class="wp-block-column is-vertically-aligned-center" style="flex-basis:72%">
             <!-- wp:post-title {"isLink":true,"style":{"typography":{"lineHeight":"1.2"}},"fontSize":"large"} /-->
         </div>
         <!-- /wp:column -->
 
-        <!-- wp:column {"verticalAlignment":"center","width":"28%"} -->
-        <div class="wp-block-column is-vertically-aligned-center" style="flex-basis:28%">
+        <!-- wp:column {"verticalAlignment":"center","width":"28%","className":"mobile-hide"} -->
+        <div class="wp-block-column is-vertically-aligned-center mobile-hide" style="flex-basis:28%">
             <!-- wp:post-date {"format":"M j, Y","isLink":true} /-->
         </div>
         <!-- /wp:column -->
