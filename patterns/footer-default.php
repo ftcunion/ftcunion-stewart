@@ -15,7 +15,7 @@
 <div class="wp-block-group">
 	<!-- wp:paragraph {"align":"center","fontSize":"tiny"} -->
 	<p class="has-text-align-center has-small-font-size">
-		&copy; NTEU Chapter 344
+		&copy; 2024 NTEU Chapter 344
 	</p>
 	<!-- /wp:paragraph -->
 </div>
