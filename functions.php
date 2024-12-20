@@ -24,24 +24,6 @@ function send_smtp_email($phpmailer)
     $phpmailer->FromName   = SMTP_NAME;
 }
 
-/**
- * Customizations for The Events Calendar
- **/
-// Show Past Events in Reverse Order
-// Source: https://theeventscalendar.com/knowledgebase/showing-past-events-in-reverse-order/
-// Source: https://docs.theeventscalendar.com/reference/hooks/tribe_events_views_v2_view_this-slug_template_vars/
-add_filter('tribe_events_views_v2_view_latest-past_template_vars', function ($template_vars) {
-    $template_vars['events'] = array_reverse($template_vars['events']);
-    return $template_vars;
-});
-// Display 10 Past Events instead of 3
-// Source: https://theeventscalendar.com/knowledgebase/changing-how-many-events-show-per-page/
-// Source: https://docs.theeventscalendar.com/reference/hooks/tribe_events_views_v2_view_this-slug_repository_args/
-add_filter('tribe_events_views_v2_view_latest-past_repository_args', function ($args) {
-    $args['posts_per_page'] = 10;
-    return $args;
-});
-
 /****************************************
  * The below are snippets from WPCode
  ****************************************/
