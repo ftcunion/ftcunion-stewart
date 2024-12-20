@@ -229,7 +229,7 @@
 				"right": "var:preset|spacing|50"
 			}
 		},
-		"css": "/* Hide some nav elements on mobile */\n@media(max-width: 599px){\n  header .wp-block-spacer {\n    display: none;\n  }\n  .mobile-flex ~ .wp-block-separator {\n    margin-block-start: 0;\n  }\n  .mobile-flex > .wp-block-site-title {\n    font-size: var(--wp--preset--font-size--huge);\n  }\n  .mobile-flex {\n    display: flex;\n    flex-direction: row;\n    flex-wrap: wrap;\n    justify-content: space-between;\n    align-items: center;\n  }\n  .mobile-hide {\n    display: none;\n  }\n}",
+		"css": "@media(max-width: 599px){\n  /* Hide some nav elements on mobile */\n  header .wp-block-spacer {\n    display: none;\n  }\n  .mobile-flex ~ .wp-block-separator {\n    margin-block-start: 0;\n  }\n  .mobile-flex > .wp-block-site-title {\n    font-size: var(--wp--preset--font-size--huge);\n  }\n  .mobile-flex {\n    display: flex;\n    flex-direction: row;\n    flex-wrap: wrap;\n    justify-content: space-between;\n    align-items: center;\n  }\n  .mobile-hide {\n    display: none;\n  }\n\n  /* Adjust nav padding */\n  nav > .wp-block-navigation__responsive-container.is-menu-open {\n    padding-top: 2.3rem;\n  }\n  header + .wp-block-group {\n    margin-top: 0;\n  }\n}",
 		"elements": {
 			"button": {
 				"color": {
