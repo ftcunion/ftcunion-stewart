@@ -19,7 +19,7 @@
     <div class="wp-block-columns alignwide are-vertically-aligned-center" style="margin-top:0;margin-bottom:0">
         <!-- wp:column {"verticalAlignment":"center","width":"72%"} -->
         <div class="wp-block-column is-vertically-aligned-center" style="flex-basis:72%">
-            <!-- wp:post-title {"isLink":true,"style":{"typography":{"lineHeight":"1.2"}},"fontSize":"large"} /-->
+            <!-- wp:post-title {"isLink":true,"style":{"typography":{"lineHeight":"1.2"}},"fontSize":"extra-large"} /-->
         </div>
         <!-- /wp:column -->
 
