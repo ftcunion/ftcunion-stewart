@@ -115,52 +115,64 @@
 				{
 					"fontFace": [
 						{
-							"fontFamily": "Cormorant",
+							"fontFamily": "Merriweather",
 							"fontStyle": "normal",
 							"fontWeight": "400",
-							"src": "file:./assets/fonts/cormorant-normal-400.woff2"
+							"src": "file:./assets/fonts/merriweather-normal-400.woff2"
 						},
 						{
-							"fontFamily": "Cormorant",
+							"fontFamily": "Merriweather",
 							"fontStyle": "normal",
 							"fontWeight": "700",
-							"src": "file:./assets/fonts/cormorant-normal-700.woff2"
+							"src": "file:./assets/fonts/merriweather-normal-700.woff2"
 						},
 						{
-							"fontFamily": "Cormorant",
+							"fontFamily": "Merriweather",
 							"fontStyle": "italic",
 							"fontWeight": "400",
-							"src": "file:./assets/fonts/cormorant-italic-400.woff2"
+							"src": "file:./assets/fonts/merriweather-italic-400.woff2"
 						},
 						{
-							"fontFamily": "Cormorant",
+							"fontFamily": "Merriweather",
 							"fontStyle": "italic",
 							"fontWeight": "700",
-							"src": "file:./assets/fonts/cormorant-italic-700.woff2"
+							"src": "file:./assets/fonts/merriweather-italic-700.woff2"
 						}
 					],
-					"fontFamily": "Cormorant, serif",
-					"name": "Cormorant",
-					"slug": "cormorant"
+					"fontFamily": "Merriweather, serif",
+					"name": "Merriweather",
+					"slug": "merriweather"
 				},
 				{
 					"fontFace": [
 						{
-							"fontFamily": "Inter",
+							"fontFamily": "Public Sans",
 							"fontStyle": "normal",
 							"fontWeight": "400",
-							"src": "file:./assets/fonts/inter-normal-400.woff2"
+							"src": "file:./assets/fonts/publicsans-normal-400.woff2"
 						},
 						{
-							"fontFamily": "Inter",
+							"fontFamily": "Public Sans",
 							"fontStyle": "normal",
 							"fontWeight": "700",
-							"src": "file:./assets/fonts/inter-normal-700.woff2"
+							"src": "file:./assets/fonts/publicsans-normal-700.woff2"
+						},
+						{
+							"fontFamily": "Public Sans",
+							"fontStyle": "italic",
+							"fontWeight": "400",
+							"src": "file:./assets/fonts/publicsans-italic-400.woff2"
+						},
+						{
+							"fontFamily": "Public Sans",
+							"fontStyle": "italic",
+							"fontWeight": "700",
+							"src": "file:./assets/fonts/publicsans-italic-700.woff2"
 						}
 					],
-					"fontFamily": "Inter, sans-serif",
-					"name": "Inter",
-					"slug": "inter"
+					"fontFamily": "Public Sans, sans-serif",
+					"name": "Public Sans",
+					"slug": "publicsans"
 				}
 			],
 			"fontSizes": [
@@ -211,7 +223,7 @@
 				},
 				{
 					"fluid": {
-						"max": "3rem",
+						"max": "2.5rem",
 						"min": "2.15rem"
 					},
 					"name": "Huge",
@@ -220,7 +232,7 @@
 				},
 				{
 					"fluid": {
-						"max": "3.125rem",
+						"max": "2.75rem",
 						"min": "2.3rem"
 					},
 					"name": "Gigantic",
@@ -267,7 +279,7 @@
 			},
 			"core/post-title": {
 				"typography": {
-					"fontFamily": "var:preset|font-family|cormorant"
+					"fontFamily": "var:preset|font-family|merriweather"
 				}
 			},
 			"core/site-tagline": {
@@ -282,7 +294,7 @@
 			},
 			"core/site-title": {
 				"typography": {
-					"fontFamily": "var:preset|font-family|cormorant",
+					"fontFamily": "var:preset|font-family|merriweather",
 					"fontSize": "var:preset|font-size|gigantic"
 				},
 				"elements": {
@@ -339,41 +351,41 @@
 			},
 			"h1": {
 				"typography": {
-					"fontFamily": "var:preset|font-family|cormorant",
+					"fontFamily": "var:preset|font-family|merriweather",
 					"fontSize": "var:preset|font-size|huge"
 				}
 			},
 			"h2": {
 				"typography": {
-					"fontFamily": "var:preset|font-family|inter",
+					"fontFamily": "var:preset|font-family|merriweather",
 					"fontSize": "var:preset|font-size|extra-large",
 					"fontWeight": "400"
 				}
 			},
 			"h3": {
 				"typography": {
-					"fontFamily": "var:preset|font-family|inter",
+					"fontFamily": "var:preset|font-family|merriweather",
 					"fontSize": "var:preset|font-size|large",
 					"fontWeight": "400"
 				}
 			},
 			"h4": {
 				"typography": {
-					"fontFamily": "var:preset|font-family|inter",
+					"fontFamily": "var:preset|font-family|merriweather",
 					"fontSize": "var:preset|font-size|normal",
 					"fontWeight": "700"
 				}
 			},
 			"h5": {
 				"typography": {
-					"fontFamily": "var:preset|font-family|inter",
+					"fontFamily": "var:preset|font-family|merriweather",
 					"fontSize": "var:preset|font-size|small",
 					"fontWeight": "700"
 				}
 			},
 			"h6": {
 				"typography": {
-					"fontFamily": "var:preset|font-family|inter",
+					"fontFamily": "var:preset|font-family|merriweather",
 					"fontSize": "var:preset|font-size|small",
 					"textTransform": "uppercase"
 				}
@@ -383,7 +395,7 @@
 					"text": "var:preset|color|foreground"
 				},
 				"typography": {
-					"fontFamily": "var:preset|font-family|cormorant"
+					"fontFamily": "var:preset|font-family|merriweather"
 				}
 			},
 			"link": {
@@ -398,7 +410,7 @@
 			}
 		},
 		"typography": {
-			"fontFamily": "var:preset|font-family|inter"
+			"fontFamily": "var:preset|font-family|publicsans"
 		}
 	},
 	"templateParts": [
