@@ -402,8 +402,10 @@
 			},
 			"core/site-title": {
 				"typography": {
-					"fontFamily": "var:preset|font-family|merriweather",
-					"fontSize": "var:preset|font-size|gigantic"
+					"fontFamily": "var:preset|font-family|publicsans",
+					"fontSize": "var:preset|font-size|gigantic",
+					"fontWeight": "700",
+					"textTransform": "uppercase"
 				},
 				"elements": {
 					"link": {
