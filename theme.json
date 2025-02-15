@@ -403,13 +403,16 @@
 			"core/site-title": {
 				"typography": {
 					"fontFamily": "var:preset|font-family|publicsans",
-					"fontSize": "var:preset|font-size|gigantic",
+					"fontSize": "var:preset|font-size|huge",
 					"fontWeight": "700",
 					"textTransform": "uppercase"
 				},
 				"elements": {
 					"link": {
 						":hover": {
+							"color": {
+								"text": "currentColor"
+							},
 							"typography": {
 								"textDecoration": "underline"
 							}
@@ -452,7 +455,7 @@
 				"right": "var:preset|spacing|50"
 			}
 		},
-		"css": "@media(max-width: 599px){\n  /* Hide some nav elements on mobile */\n  header .wp-block-spacer {\n    display: none;\n  }\n  .mobile-flex ~ .wp-block-separator {\n    margin-block-start: 0;\n  }\n  .mobile-flex {\n    display: flex;\n    flex-direction: row;\n    flex-wrap: wrap;\n    justify-content: space-between;\n    align-items: center;\n  }\n  .mobile-hide {\n    display: none;\n  }\n\n  /* Adjust nav padding */\n  nav > .wp-block-navigation__responsive-container.is-menu-open {\n    padding-top: 2.3rem;\n  }\n  header + .wp-block-group {\n    margin-top: 0;\n  }\n}",
+		"css": "@media(max-width: 599px) {\n\n  /* Hide some nav elements on mobile */\n  header .wp-block-spacer {\n    display: none;\n  }\n  .mobile-flex~.wp-block-separator {\n    margin-block-start: 0;\n  }\n  .mobile-flex {\n    display: flex;\n    flex-direction: row;\n    flex-wrap: wrap;\n    justify-content: space-between;\n    align-items: center;\n  }\n  .mobile-hide {\n    display: none;\n  }\n\n  /* Adjust nav padding */\n  nav>.wp-block-navigation__responsive-container.is-menu-open {\n    padding-top: 2.3rem;\n  }\n  header+.wp-block-group {\n    margin-top: 0;\n  }\n\n  /* Special mobile nav logo */\n  .wp-block-site-title a {\n    display: inline-block;\n    overflow: clip;\n    white-space: nowrap;\n    margin: 0;\n    padding: 0;\n  }\n  .wp-block-site-title a::before {\n    content: url('/wp-content/themes/ftcunion-stewart/assets/images/site-title-svgo.svg');\n    font-size: 0;\n    line-height: 0;\n  }\n}",
 		"elements": {
 			"button": {
 				"color": {
