@@ -403,8 +403,7 @@
 			"core/site-title": {
 				"typography": {
 					"fontFamily": "var:preset|font-family|merriweather",
-					"fontSize": "var:preset|font-size|gigantic",
-					"fontStyle": "italic"
+					"fontSize": "var:preset|font-size|gigantic"
 				},
 				"elements": {
 					"link": {
