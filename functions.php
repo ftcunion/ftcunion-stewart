@@ -1,5 +1,19 @@
 <?php
 
+// Disable Cloudflare Cache on nocache_headers
+add_filter('nocache_headers', function ($headers) {
+    return [
+        'cdn-cache-control' =>  $headers['cache-control'] ?? 'no-cache, must-revalidate, max-age=0'
+    ] + $headers;
+});
+
+// Set CDN-Cache-Control header same as Cache-Control if defined or default to 4h (+1Y stale-while-revalidate)
+add_filter('wp_headers', function ($headers) {
+    return [
+        'cdn-cache-control' =>  $headers['cache-control'] ?? 'max-age=14400, stale-while-revalidate=31536000'
+    ] + $headers;
+});
+
 /**
  * This function will connect wp_mail to your authenticated
  * SMTP server. This improves reliability of wp_mail, and 
