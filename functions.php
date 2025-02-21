@@ -7,10 +7,10 @@ add_filter('nocache_headers', function ($headers) {
     ] + $headers;
 });
 
-// Set CDN-Cache-Control header same as Cache-Control if defined or default to 4h (+1Y stale-while-revalidate)
+// Set CDN-Cache-Control header same as Cache-Control if defined or default to 1d (+1Y stale-while-revalidate)
 add_filter('wp_headers', function ($headers) {
     return [
-        'cdn-cache-control' =>  $headers['cache-control'] ?? 'max-age=14400, stale-while-revalidate=31536000'
+        'cdn-cache-control' =>  $headers['cache-control'] ?? 'max-age=86400, stale-while-revalidate=31536000'
     ] + $headers;
 });
 
