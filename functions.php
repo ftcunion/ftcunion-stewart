@@ -1,17 +1,19 @@
 <?php
 
 // Disable Cloudflare Cache on nocache_headers
+// (override if already set)
 add_filter('nocache_headers', function ($headers) {
     return [
-        'cdn-cache-control' =>  $headers['cache-control'] ?? 'no-cache, must-revalidate, max-age=0'
+        'CDN-Cache-Control' =>  $headers['Cache-Control'] ?? 'no-cache, must-revalidate, max-age=0'
     ] + $headers;
 });
 
 // Set CDN-Cache-Control header same as Cache-Control if defined or default to 1d (+1Y stale-while-revalidate)
+// (don't override if already set)
 add_filter('wp_headers', function ($headers) {
-    return [
-        'cdn-cache-control' =>  $headers['cache-control'] ?? 'max-age=86400, stale-while-revalidate=31536000'
-    ] + $headers;
+    return $headers + [
+        'CDN-Cache-Control' =>  $headers['Cache-Control'] ?? 'max-age=86400, stale-while-revalidate=31536000'
+    ];
 });
 
 /**
