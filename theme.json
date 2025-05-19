@@ -118,48 +118,56 @@
 							"fontFamily": "Merriweather",
 							"fontStyle": "normal",
 							"fontWeight": "300",
+							"fontDisplay": "swap",
 							"src": "file:./assets/fonts/merriweather-normal-300.woff2"
 						},
 						{
 							"fontFamily": "Merriweather",
 							"fontStyle": "normal",
 							"fontWeight": "400",
+							"fontDisplay": "swap",
 							"src": "file:./assets/fonts/merriweather-normal-400.woff2"
 						},
 						{
 							"fontFamily": "Merriweather",
 							"fontStyle": "normal",
 							"fontWeight": "700",
+							"fontDisplay": "swap",
 							"src": "file:./assets/fonts/merriweather-normal-700.woff2"
 						},
 						{
 							"fontFamily": "Merriweather",
 							"fontStyle": "normal",
 							"fontWeight": "900",
+							"fontDisplay": "swap",
 							"src": "file:./assets/fonts/merriweather-normal-900.woff2"
 						},
 						{
 							"fontFamily": "Merriweather",
 							"fontStyle": "italic",
 							"fontWeight": "300",
+							"fontDisplay": "swap",
 							"src": "file:./assets/fonts/merriweather-italic-300.woff2"
 						},
 						{
 							"fontFamily": "Merriweather",
 							"fontStyle": "italic",
 							"fontWeight": "400",
+							"fontDisplay": "swap",
 							"src": "file:./assets/fonts/merriweather-italic-400.woff2"
 						},
 						{
 							"fontFamily": "Merriweather",
 							"fontStyle": "italic",
 							"fontWeight": "700",
+							"fontDisplay": "swap",
 							"src": "file:./assets/fonts/merriweather-italic-700.woff2"
 						},
 						{
 							"fontFamily": "Merriweather",
 							"fontStyle": "italic",
 							"fontWeight": "900",
+							"fontDisplay": "swap",
 							"src": "file:./assets/fonts/merriweather-italic-900.woff2"
 						}
 					],
@@ -173,108 +181,126 @@
 							"fontFamily": "Public Sans",
 							"fontStyle": "normal",
 							"fontWeight": "100",
+							"fontDisplay": "swap",
 							"src": "file:./assets/fonts/publicsans-normal-100.woff2"
 						},
 						{
 							"fontFamily": "Public Sans",
 							"fontStyle": "normal",
 							"fontWeight": "200",
+							"fontDisplay": "swap",
 							"src": "file:./assets/fonts/publicsans-normal-200.woff2"
 						},
 						{
 							"fontFamily": "Public Sans",
 							"fontStyle": "normal",
 							"fontWeight": "300",
+							"fontDisplay": "swap",
 							"src": "file:./assets/fonts/publicsans-normal-300.woff2"
 						},
 						{
 							"fontFamily": "Public Sans",
 							"fontStyle": "normal",
 							"fontWeight": "400",
+							"fontDisplay": "swap",
 							"src": "file:./assets/fonts/publicsans-normal-400.woff2"
 						},
 						{
 							"fontFamily": "Public Sans",
 							"fontStyle": "normal",
 							"fontWeight": "500",
+							"fontDisplay": "swap",
 							"src": "file:./assets/fonts/publicsans-normal-500.woff2"
 						},
 						{
 							"fontFamily": "Public Sans",
 							"fontStyle": "normal",
 							"fontWeight": "600",
+							"fontDisplay": "swap",
 							"src": "file:./assets/fonts/publicsans-normal-600.woff2"
 						},
 						{
 							"fontFamily": "Public Sans",
 							"fontStyle": "normal",
 							"fontWeight": "700",
+							"fontDisplay": "swap",
 							"src": "file:./assets/fonts/publicsans-normal-700.woff2"
 						},
 						{
 							"fontFamily": "Public Sans",
 							"fontStyle": "normal",
 							"fontWeight": "800",
+							"fontDisplay": "swap",
 							"src": "file:./assets/fonts/publicsans-normal-800.woff2"
 						},
 						{
 							"fontFamily": "Public Sans",
 							"fontStyle": "normal",
 							"fontWeight": "900",
+							"fontDisplay": "swap",
 							"src": "file:./assets/fonts/publicsans-normal-900.woff2"
 						},
 						{
 							"fontFamily": "Public Sans",
 							"fontStyle": "italic",
 							"fontWeight": "100",
+							"fontDisplay": "swap",
 							"src": "file:./assets/fonts/publicsans-italic-100.woff2"
 						},
 						{
 							"fontFamily": "Public Sans",
 							"fontStyle": "italic",
 							"fontWeight": "200",
+							"fontDisplay": "swap",
 							"src": "file:./assets/fonts/publicsans-italic-200.woff2"
 						},
 						{
 							"fontFamily": "Public Sans",
 							"fontStyle": "italic",
 							"fontWeight": "300",
+							"fontDisplay": "swap",
 							"src": "file:./assets/fonts/publicsans-italic-300.woff2"
 						},
 						{
 							"fontFamily": "Public Sans",
 							"fontStyle": "italic",
 							"fontWeight": "400",
+							"fontDisplay": "swap",
 							"src": "file:./assets/fonts/publicsans-italic-400.woff2"
 						},
 						{
 							"fontFamily": "Public Sans",
 							"fontStyle": "italic",
 							"fontWeight": "500",
+							"fontDisplay": "swap",
 							"src": "file:./assets/fonts/publicsans-italic-500.woff2"
 						},
 						{
 							"fontFamily": "Public Sans",
 							"fontStyle": "italic",
 							"fontWeight": "600",
+							"fontDisplay": "swap",
 							"src": "file:./assets/fonts/publicsans-italic-600.woff2"
 						},
 						{
 							"fontFamily": "Public Sans",
 							"fontStyle": "italic",
 							"fontWeight": "700",
+							"fontDisplay": "swap",
 							"src": "file:./assets/fonts/publicsans-italic-700.woff2"
 						},
 						{
 							"fontFamily": "Public Sans",
 							"fontStyle": "italic",
 							"fontWeight": "800",
+							"fontDisplay": "swap",
 							"src": "file:./assets/fonts/publicsans-italic-800.woff2"
 						},
 						{
 							"fontFamily": "Public Sans",
 							"fontStyle": "italic",
 							"fontWeight": "900",
+							"fontDisplay": "swap",
 							"src": "file:./assets/fonts/publicsans-italic-900.woff2"
 						}
 					],
