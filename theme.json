@@ -494,48 +494,42 @@
 				"typography": {
 					"fontFamily": "var:preset|font-family|merriweather",
 					"fontSize": "var:preset|font-size|huge"
-				},
-				"css": "font-size-adjust: ex-height 0.553"
+				}
 			},
 			"h2": {
 				"typography": {
 					"fontFamily": "var:preset|font-family|merriweather",
 					"fontSize": "var:preset|font-size|extra-large",
 					"fontWeight": "400"
-				},
-				"css": "font-size-adjust: ex-height 0.553"
+				}
 			},
 			"h3": {
 				"typography": {
 					"fontFamily": "var:preset|font-family|merriweather",
 					"fontSize": "var:preset|font-size|large",
 					"fontWeight": "400"
-				},
-				"css": "font-size-adjust: ex-height 0.553"
+				}
 			},
 			"h4": {
 				"typography": {
 					"fontFamily": "var:preset|font-family|merriweather",
 					"fontSize": "var:preset|font-size|normal",
 					"fontWeight": "700"
-				},
-				"css": "font-size-adjust: ex-height 0.553"
+				}
 			},
 			"h5": {
 				"typography": {
 					"fontFamily": "var:preset|font-family|merriweather",
 					"fontSize": "var:preset|font-size|small",
 					"fontWeight": "700"
-				},
-				"css": "font-size-adjust: ex-height 0.553"
+				}
 			},
 			"h6": {
 				"typography": {
 					"fontFamily": "var:preset|font-family|merriweather",
 					"fontSize": "var:preset|font-size|small",
 					"textTransform": "uppercase"
-				},
-				"css": "font-size-adjust: ex-height 0.553"
+				}
 			},
 			"heading": {
 				"color": {
