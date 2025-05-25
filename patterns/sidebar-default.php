@@ -12,7 +12,7 @@
     <!-- wp:group {"className":"mobile-flex","layout":{"type":"default"}} -->
     <div class="wp-block-group mobile-flex">
         <!-- wp:html -->
-        <div class="mobile-hide"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 300 300" width=120 height=120><use href="<?php echo esc_url(get_stylesheet_directory_uri()); ?>/assets/images/site-title-svgo.svg#seal" xlink:href="<?php echo esc_url(get_stylesheet_directory_uri()); ?>/assets/images/site-title-svgo.svg#seal" fill="#1d3557" /></svg></div>
+        <div class="mobile-hide"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 300 300" width=120 height=120><use href="<?php echo esc_url(wp_make_link_relative(get_stylesheet_directory_uri())); ?>/assets/images/site-title-svgo.svg#seal" xlink:href="<?php echo esc_url(wp_make_link_relative(get_stylesheet_directory_uri())); ?>/assets/images/site-title-svgo.svg#seal" fill="#1d3557" /></svg></div>
         <!-- /wp:html -->
 
         <!-- wp:site-logo {"width":90,"className":"is-style-rounded mobile-hide"} /-->
