@@ -1,5 +1,35 @@
 <?php
 
+/**
+ * CSS unload and load
+ */
+function stewart_dequeue_styles()
+{
+    // Dequeue the default theme stylesheet.
+    wp_dequeue_style('stewart-style');
+    // Deregister the default theme stylesheet.
+    wp_deregister_style('stewart-style');
+}
+
+function ftcunion_styles()
+{
+    // Register theme stylesheet.
+    wp_register_style(
+        'ftcunion-style',
+        get_stylesheet_directory_uri() . '/style.min.css',
+        array(),
+        wp_get_theme()->get('Version')
+    );
+    // Enqueue theme stylesheet.
+    wp_enqueue_style('ftcunion-style');
+}
+add_action('wp_enqueue_scripts', 'stewart_dequeue_styles');
+add_action('wp_enqueue_scripts', 'ftcunion_styles');
+
+
+/**
+ * CDN Cache-Control
+ */
 // Disable Cloudflare Cache on nocache_headers
 // (override if already set)
 add_filter('nocache_headers', function ($headers) {
