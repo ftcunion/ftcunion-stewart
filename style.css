@@ -99,7 +99,7 @@ footer {
 
     /* Fix spacing of title when there is no logo */
     .wp-block-site-title {
-        margin-block-start: var(--wp--style--block-gap);
+        margin-block-start: var(--wp--style--block-gap) !important;
     }
 
 }
