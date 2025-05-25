@@ -3,14 +3,6 @@
 /**
  * CSS unload and load
  */
-function stewart_dequeue_styles()
-{
-    // Dequeue the default theme stylesheet.
-    wp_dequeue_style('stewart-style');
-    // Deregister the default theme stylesheet.
-    wp_deregister_style('stewart-style');
-}
-
 function ftcunion_styles()
 {
     // Register theme stylesheet.
@@ -23,8 +15,16 @@ function ftcunion_styles()
     // Enqueue theme stylesheet.
     wp_enqueue_style('ftcunion-style');
 }
-add_action('wp_enqueue_scripts', 'stewart_dequeue_styles');
 add_action('wp_enqueue_scripts', 'ftcunion_styles');
+
+function stewart_dequeue_styles()
+{
+    // Dequeue the default theme stylesheet.
+    wp_dequeue_style('stewart-style');
+    // Deregister the default theme stylesheet.
+    wp_deregister_style('stewart-style');
+}
+add_action('wp_enqueue_scripts', 'stewart_dequeue_styles', 100);
 
 
 /**
