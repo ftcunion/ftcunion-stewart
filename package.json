@@ -1,0 +1,30 @@
+{
+  "name": "ftcunion-stewart",
+  "version": "4.0.0",
+  "description": "WordPress theme for FTC Union Website (child of Stewart)",
+  "main": "index.mjs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "node index.mjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ftcunion/ftcunion-stewart.git"
+  },
+  "keywords": [
+    "wordpress",
+    "wordpress-theme",
+    "child-theme",
+    "two-columns"
+  ],
+  "author": "Matthew Thomas",
+  "license": "GPL-2.0",
+  "bugs": {
+    "url": "https://github.com/ftcunion/ftcunion-stewart/issues"
+  },
+  "homepage": "https://github.com/ftcunion/ftcunion-stewart#readme",
+  "dependencies": {
+    "mini-svg-data-uri": "^1.4.4",
+    "minify": "^14.0.0"
+  }
+}
