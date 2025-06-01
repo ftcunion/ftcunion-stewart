@@ -171,7 +171,7 @@
 							"src": "file:./assets/fonts/merriweather-italic-900.woff2"
 						}
 					],
-					"fontFamily": "Merriweather, serif",
+					"fontFamily": "Merriweather, Charter, Bitstream Charter, Cambria, Times New Roman, Times, serif",
 					"name": "Merriweather",
 					"slug": "merriweather"
 				},
@@ -304,7 +304,7 @@
 							"src": "file:./assets/fonts/publicsans-italic-900.woff2"
 						}
 					],
-					"fontFamily": "Public Sans, system-ui, sans-serif",
+					"fontFamily": "Public Sans, Libre Franklin, SF Pro Text, Franklin Gothic Book, source-sans-pro, system-ui, sans-serif",
 					"name": "Public Sans",
 					"slug": "publicsans"
 				}
