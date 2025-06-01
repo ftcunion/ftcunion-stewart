@@ -13,6 +13,10 @@ Child theme of Stuart.
 
 == Changelog ==
 
+= 4.1.0 =
+* Inline SVGs in CSS
+* Better fallback fonts
+
 = 4.0.0 =
 * FTC Union logo on both desktop and mobile
 * Fix mobile layout issue affecting websites without site-logos
