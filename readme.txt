@@ -13,6 +13,9 @@ Child theme of Stuart.
 
 == Changelog ==
 
+= 4.1.1 =
+* Restore mobile safari bugfix
+
 = 4.1.0 =
 * Inline SVGs in CSS
 * Better fallback fonts
