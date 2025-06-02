@@ -46,6 +46,7 @@ footer {
 /* Special nav logo */
 .wp-block-site-title a {
     display: inline-block;
+    vertical-align: top;
     overflow: clip;
     white-space: nowrap;
     margin: 0;
