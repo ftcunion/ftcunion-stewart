@@ -26,6 +26,14 @@ function stewart_dequeue_styles()
 }
 add_action('wp_enqueue_scripts', 'stewart_dequeue_styles', 100);
 
+/**
+ * Preload HTTP header for stylesheet
+ */
+function add_header_ftcunion_styles()
+{
+    header('Link: <' . wp_styles()->_css_href(get_stylesheet_directory_uri() . '/style.min.css', wp_get_theme()->get('Version'), 'ftcunion-style') . '>; rel=preload; as=style');
+}
+add_action('send_headers', 'add_header_ftcunion_styles');
 
 /**
  * CDN Cache-Control

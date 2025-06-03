@@ -13,6 +13,9 @@ Child theme of Stuart.
 
 == Changelog ==
 
+= 4.1.2 =
+* HTTP header to preload css
+
 = 4.1.1 =
 * Restore mobile safari bugfix
 
