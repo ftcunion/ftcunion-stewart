@@ -5,6 +5,7 @@
   "main": "index.mjs",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "version": "sed -i \"s/^Version: [0-9.]*$/Version: $(npm pkg get version --workspaces=false | tr -d \\\")/\" ./style.css && git add style.css",
     "build": "node index.mjs"
   },
   "repository": {
