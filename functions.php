@@ -46,12 +46,35 @@ add_filter('nocache_headers', function ($headers) {
     ] + $headers;
 });
 
-// Set CDN-Cache-Control header same as Cache-Control if defined or default to 1d (+1Y stale-while-revalidate)
+// Set CDN-Cache-Control header same as Cache-Control if defined or default to 1w (+1Y stale-while-revalidate)
 // (don't override if already set)
 add_filter('wp_headers', function ($headers) {
     return $headers + [
-        'CDN-Cache-Control' =>  $headers['Cache-Control'] ?? 'max-age=86400, stale-while-revalidate=31536000'
+        'CDN-Cache-Control' =>  $headers['Cache-Control'] ?? 'max-age=604800, stale-while-revalidate=31536000'
     ];
+});
+
+/**
+ * Filter the default theme.json data.
+ *
+ * Removes default duotone, gradients and color palette values provided by WordPress core.
+ * This allows the theme to define its own color settings without also loading core defaults as CSS variables.
+ *
+ * @param WP_Theme_JSON_Data $theme_json The default theme.json data.
+ *
+ * @return WP_Theme_JSON_Data The modified theme.json data.
+ */
+add_filter('wp_theme_json_data_default', function ($theme_json) {
+    // Get JSON data as an array.
+    $data = $theme_json->get_data();
+
+    // Remove duotone, gradients, and palette values.
+    $data['settings']['color']['duotone']['default']   = [];
+    $data['settings']['color']['gradients']['default'] = [];
+    $data['settings']['color']['palette']['default']   = [];
+
+    // Update the theme JSON data.
+    return $theme_json->update_with($data);
 });
 
 /**
