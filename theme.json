@@ -3,24 +3,8 @@
 	"settings": {
 		"appearanceTools": true,
 		"color": {
-			"duotone": [
-				{
-					"colors": [
-						"#F1F2F2",
-						"#F1F2F2"
-					],
-					"name": "Background and Foreground",
-					"slug": "background-and-foreground"
-				},
-				{
-					"colors": [
-						"#C14420",
-						"#F1F2F2"
-					],
-					"name": "Foreground and background",
-					"slug": "foreground-and-background"
-				}
-			],
+			"duotone": [],
+			"gradients": [],
 			"palette": [
 				{
 					"color": "#1d3557",
@@ -47,7 +31,10 @@
 					"name": "Tertiary",
 					"slug": "tertiary"
 				}
-			]
+			],
+			"defaultDuotone": false,
+			"defaultGradients": false,
+			"defaultPalette": false
 		},
 		"custom": {
 			"body": {
