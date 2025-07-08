@@ -68,10 +68,9 @@ add_filter('wp_theme_json_data_default', function ($theme_json) {
     // Get JSON data as an array.
     $data = $theme_json->get_data();
 
-    // Remove duotone, gradients, and palette values.
+    // Remove duotone and gradients values.
     $data['settings']['color']['duotone']['default']   = [];
     $data['settings']['color']['gradients']['default'] = [];
-    $data['settings']['color']['palette']['default']   = [];
 
     // Update the theme JSON data.
     return $theme_json->update_with($data);
