@@ -135,7 +135,7 @@ function member_only_links_type()
         'show_in_rest'        => true,
         'capability_type'     => 'post',
         'hierarchical'        => false,
-        'has_archive'         => false,
+        'has_archive'         => true,
         'query_var'           => false,
         'can_export'          => true,
         'show_in_menu'        => true,
