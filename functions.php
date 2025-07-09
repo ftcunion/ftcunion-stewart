@@ -100,6 +100,72 @@ function send_smtp_email($phpmailer)
     $phpmailer->FromName   = SMTP_NAME;
 }
 
+/** 
+ * Add custom post type for member-only links
+ * The point is for posts to not be accessible from any path other than /members/
+ */
+add_action('init', 'member_only_links_type');
+function member_only_links_type()
+{
+    $args = [
+        'label'  => esc_html__('Member Posts', 'text-domain'),
+        'labels' => [
+            'menu_name'          => esc_html__('Member Posts', 'member-only-links'),
+            'name_admin_bar'     => esc_html__('Member Post', 'member-only-links'),
+            'add_new'            => esc_html__('Add Member Post', 'member-only-links'),
+            'add_new_item'       => esc_html__('Add new Member Post', 'member-only-links'),
+            'new_item'           => esc_html__('New Member Post', 'member-only-links'),
+            'edit_item'          => esc_html__('Edit Member Post', 'member-only-links'),
+            'view_item'          => esc_html__('View Member Post', 'member-only-links'),
+            'update_item'        => esc_html__('View Member Post', 'member-only-links'),
+            'all_items'          => esc_html__('All Member Posts', 'member-only-links'),
+            'search_items'       => esc_html__('Search Member Posts', 'member-only-links'),
+            'parent_item_colon'  => esc_html__('Parent Member Post', 'member-only-links'),
+            'not_found'          => esc_html__('No Member Posts found', 'member-only-links'),
+            'not_found_in_trash' => esc_html__('No Member Posts found in Trash', 'member-only-links'),
+            'name'               => esc_html__('Member Posts', 'member-only-links'),
+            'singular_name'      => esc_html__('Member Post', 'member-only-links'),
+        ],
+        'public'              => true,
+        'exclude_from_search' => true,
+        'publicly_queryable'  => true,
+        'show_ui'             => true,
+        'show_in_nav_menus'   => true,
+        'show_in_admin_bar'   => true,
+        'show_in_rest'        => true,
+        'capability_type'     => 'post',
+        'hierarchical'        => false,
+        'has_archive'         => false,
+        'query_var'           => false,
+        'can_export'          => true,
+        'show_in_menu'        => true,
+        'menu_position'       => 5,
+        'menu_icon'           => 'dashicons-lock',
+        'delete_with_user'    => false,
+        'supports' => [
+            'title',
+            'editor',
+            'thumbnail',
+            'revisions',
+            'excerpt',
+        ],
+        'rewrite' => [
+            'slug'       => 'members',
+            'with_front' => false,
+            'feeds'      => false,
+        ],
+    ];
+
+    register_post_type('member-post', $args);
+}
+// Fix rewrite rules after theme activation
+add_action('after_switch_theme', 'my_rewrite_flush');
+function my_rewrite_flush()
+{
+    member_only_links_type();
+    flush_rewrite_rules();
+}
+
 /****************************************
  * The below are snippets from WPCode
  ****************************************/
