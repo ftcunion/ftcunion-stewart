@@ -1,27 +1,56 @@
 // Check if "member-access-url" is set in the localStorage
 (function () {
+  const currentUrl = new URL(document.location.href);
+
+  function constructIntendedUrl(routeUrl, storedQuery) {
+    // If there is an "intended_path" query parameter, go there
+    intendedUrl = new URL(
+      routeUrl.searchParams.get("intended_path"),
+      document.location.origin
+    );
+    // Add the "val" and "sig" query parameters to the intended URL
+    intendedUrl.searchParams.set("val", storedQuery.value);
+    intendedUrl.searchParams.set("sig", storedQuery.signature);
+    intendedUrl.searchParams.set("iam", storedQuery.iam);
+
+    return intendedUrl.href;
+  }
+
+  // Process for /members/ pages
+  if (
+    currentUrl.pathname.startsWith("/members/") &&
+    currentUrl.searchParams.has("val") &&
+    currentUrl.searchParams.has("sig") &&
+    currentUrl.searchParams.has("iam")
+  ) {
+    if (currentUrl.pathname === "/members/") {
+      // If we are on the members page, save the current URL to localStorage
+      localStorage.setItem("member-access-url", currentUrl.href);
+    }
+    // If we are on any /members/* page, remove the query parameters from the address bar
+    const newUrl = new URL(currentUrl.href);
+    newUrl.searchParams.delete("val");
+    newUrl.searchParams.delete("sig");
+    newUrl.searchParams.delete("iam");
+    // Update the URL without reloading the page
+    history.replaceState({}, "", newUrl.href);
+  }
+
+  // Process for login page and navigation links for every page
   if (localStorage.getItem("member-access-url")) {
     // Check if the val query parameter is in the future
-    const url = new URL(localStorage.getItem("member-access-url"));
-    const value = url.searchParams.get("val");
-    const signature = url.searchParams.get("sig");
-    const iam = url.searchParams.get("iam");
-    const currentUrl = new URL(document.location.href);
-    if (signature && value && !currentUrl.searchParams.has("error")) {
-      function constructIntendedUrl(routeUrl) {
-        // If there is an "intended_path" query parameter, go there
-        intendedUrl = new URL(
-          routeUrl.searchParams.get("intended_path"),
-          document.location.origin
-        );
-        // Add the "val" and "sig" query parameters to the intended URL
-        intendedUrl.searchParams.set("val", value);
-        intendedUrl.searchParams.set("sig", signature);
-        intendedUrl.searchParams.set("iam", iam);
+    const storedUrl = new URL(localStorage.getItem("member-access-url"));
+    const storedQuery = {
+      value: storedUrl.searchParams.get("val"),
+      signature: storedUrl.searchParams.get("sig"),
+      iam: storedUrl.searchParams.get("iam"),
+    };
 
-        return intendedUrl.href;
-      }
-
+    if (
+      storedQuery.signature &&
+      storedQuery.value &&
+      !currentUrl.searchParams.has("error")
+    ) {
       if (
         currentUrl.pathname === "/member-login/" &&
         currentUrl.searchParams.has("intended_path")
@@ -29,20 +58,6 @@
         // If the current URL is member-login and has an intended_path, redirect to that path
         window.location.replace(constructIntendedUrl(currentUrl));
       } else {
-        // If we are on a /members/* page, remove the query parameters from the address bar
-        if (
-          currentUrl.pathname.startsWith("/members/") &&
-          currentUrl.searchParams.has("val") &&
-          currentUrl.searchParams.has("sig") &&
-          currentUrl.searchParams.has("iam")
-        ) {
-          const newUrl = new URL(currentUrl.href);
-          newUrl.searchParams.delete("val");
-          newUrl.searchParams.delete("sig");
-          newUrl.searchParams.delete("iam");
-          // Update the URL without reloading the page
-          history.replaceState({}, "", newUrl.href);
-        }
         // Run on DOMContentLoaded to ensure all links are available
         document.addEventListener("DOMContentLoaded", () => {
           // Replace the navigation link with the intended URL
@@ -56,7 +71,7 @@
                 linkUrl.pathname === "/member-login/" &&
                 linkUrl.searchParams.has("intended_path")
               ) {
-                link.href = constructIntendedUrl(linkUrl);
+                link.href = constructIntendedUrl(linkUrl, storedQuery);
               }
             });
           }
