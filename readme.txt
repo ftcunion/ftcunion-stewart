@@ -13,8 +13,9 @@ Child theme of Stuart.
 
 == Changelog ==
 
-= 4.1.2 =
+= 4.2.0 =
 * HTTP header to preload css
+* Add member-only custom post type
 
 = 4.1.1 =
 * Restore mobile safari bugfix

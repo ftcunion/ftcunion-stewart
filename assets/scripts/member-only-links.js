@@ -7,12 +7,7 @@
     const signature = url.searchParams.get("sig");
     const iam = url.searchParams.get("iam");
     const currentUrl = new URL(document.location.href);
-    if (
-      signature &&
-      value &&
-      value + 14400 > Math.floor(Date.now() / 1000) &&
-      !currentUrl.searchParams.has("error")
-    ) {
+    if (signature && value && !currentUrl.searchParams.has("error")) {
       function constructIntendedUrl(routeUrl) {
         // If there is an "intended_path" query parameter, go there
         intendedUrl = new URL(
@@ -34,6 +29,20 @@
         // If the current URL is member-login and has an intended_path, redirect to that path
         window.location.replace(constructIntendedUrl(currentUrl));
       } else {
+        // If we are on a /members/* page, remove the query parameters from the address bar
+        if (
+          currentUrl.pathname.startsWith("/members/") &&
+          currentUrl.searchParams.has("val") &&
+          currentUrl.searchParams.has("sig") &&
+          currentUrl.searchParams.has("iam")
+        ) {
+          const newUrl = new URL(currentUrl.href);
+          newUrl.searchParams.delete("val");
+          newUrl.searchParams.delete("sig");
+          newUrl.searchParams.delete("iam");
+          // Update the URL without reloading the page
+          history.replaceState({}, "", newUrl.href);
+        }
         // Run on DOMContentLoaded to ensure all links are available
         document.addEventListener("DOMContentLoaded", () => {
           // Replace the navigation link with the intended URL
