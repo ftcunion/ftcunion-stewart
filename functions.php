@@ -46,7 +46,7 @@ function ftcunion_scripts()
         get_stylesheet_directory_uri() . '/assets/scripts/member-only-links.min.js',
         array(),
         wp_get_theme()->get('Version'),
-        false // Do not load in footer
+        array('strategy' => 'async', 'in_footer' => false)
     );
     // Enqueue theme script.
     wp_enqueue_script('ftcunion-member-only-links-script');
