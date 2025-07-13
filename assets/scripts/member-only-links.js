@@ -36,7 +36,7 @@
     history.replaceState({}, "", newUrl.href);
   }
 
-  // Process for login page and navigation links for every page
+  // Process for login page and navigation links
   if (localStorage.getItem("member-access-url")) {
     // Check if the val query parameter is in the future
     const storedUrl = new URL(localStorage.getItem("member-access-url"));
@@ -56,7 +56,7 @@
         currentUrl.searchParams.has("intended_path")
       ) {
         // If the current URL is member-login and has an intended_path, redirect to that path
-        window.location.replace(constructIntendedUrl(currentUrl));
+        window.location.replace(constructIntendedUrl(currentUrl, storedQuery));
       } else {
         // Run on DOMContentLoaded to ensure all links are available
         document.addEventListener("DOMContentLoaded", () => {
