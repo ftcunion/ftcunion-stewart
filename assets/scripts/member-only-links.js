@@ -34,21 +34,24 @@
         // If the current URL is member-login and has an intended_path, redirect to that path
         window.location.replace(constructIntendedUrl(currentUrl));
       } else {
-        // Replace the navigation link with the intended URL
-        const navigationLink = document.querySelectorAll(
-          ".member-access-link a"
-        );
-        if (navigationLink) {
-          navigationLink.forEach((link) => {
-            const linkUrl = new URL(link.href);
-            if (
-              linkUrl.pathname === "/member-login/" &&
-              linkUrl.searchParams.has("intended_path")
-            ) {
-              link.href = constructIntendedUrl(linkUrl);
-            }
-          });
-        }
+        // Run on DOMContentLoaded to ensure all links are available
+        document.addEventListener("DOMContentLoaded", () => {
+          // Replace the navigation link with the intended URL
+          const navigationLink = document.querySelectorAll(
+            ".member-access-link a"
+          );
+          if (navigationLink) {
+            navigationLink.forEach((link) => {
+              const linkUrl = new URL(link.href);
+              if (
+                linkUrl.pathname === "/member-login/" &&
+                linkUrl.searchParams.has("intended_path")
+              ) {
+                link.href = constructIntendedUrl(linkUrl);
+              }
+            });
+          }
+        });
       }
     } else {
       // If the value is in the past or is invalid, remove the URL from localStorage
