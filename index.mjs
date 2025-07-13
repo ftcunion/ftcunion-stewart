@@ -1,12 +1,15 @@
-import { readFileSync, writeFileSync } from 'fs';
-import { minify } from 'minify';
-import svgToTinyDataUri from 'mini-svg-data-uri';
+import { readFileSync, writeFileSync } from "fs";
+import { minify } from "minify";
+import svgToTinyDataUri from "mini-svg-data-uri";
 
-const inputFile = 'style.css';
-const outputFile = 'style.min.css';
+const inputCSSFile = "style.css";
+const outputCSSFile = "style.min.css";
+
+const inputJSFile = "assets/scripts/member-only-links.js";
+const outputJSFile = "assets/scripts/member-only-links.min.js";
 
 // Read style.css
-const input_css = readFileSync(inputFile, 'utf8');
+const input_css = readFileSync(inputCSSFile, "utf8");
 
 // Keep a copy of the original CSS for output
 var output_css = input_css;
@@ -16,22 +19,27 @@ const svgRegex = /url\(['"]?([^'")]+\.svg)['"]?\)/g;
 
 // Read SVG filename from capture group 1 and convert to tiny data URI
 for (const match of input_css.matchAll(svgRegex)) {
-    const svgUrl = match[1];
-    console.log(`Inlining SVG: ${svgUrl}`);
+  const svgUrl = match[1];
+  console.log(`Inlining SVG: ${svgUrl}`);
 
-    // Read the SVG file
-    const svgContent = readFileSync(svgUrl, 'utf8');
+  // Read the SVG file
+  const svgContent = readFileSync(svgUrl, "utf8");
 
-    // Convert SVG to tiny data URI
-    const tinyDataUri = svgToTinyDataUri(svgContent);
+  // Convert SVG to tiny data URI
+  const tinyDataUri = svgToTinyDataUri(svgContent);
 
-    // Replace the SVG URL in the CSS with the tiny data URI
-    output_css = output_css.replace(match[0], `url("${tinyDataUri}")`);
+  // Replace the SVG URL in the CSS with the tiny data URI
+  output_css = output_css.replace(match[0], `url("${tinyDataUri}")`);
 }
 
 // Minify the CSS
-minify.css(output_css)
-    .then(minifiedCss => {
-        writeFileSync(outputFile, minifiedCss);
-        console.log(`Minified CSS saved to ${outputFile}`);
-    })
+minify.css(output_css).then((minifiedCss) => {
+  writeFileSync(outputCSSFile, minifiedCss);
+  console.log(`Minified CSS saved to ${outputCSSFile}`);
+});
+
+// Minify the JavaScript
+minify.js(readFileSync(inputJSFile, "utf8")).then((minifiedJs) => {
+  writeFileSync(outputJSFile, minifiedJs);
+  console.log(`Minified JS saved to ${outputJSFile}`);
+});
