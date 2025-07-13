@@ -113,3 +113,12 @@ footer {
         min-height: unset;
     }
 }
+
+/* Hide member post type on print */
+@media print {
+
+    body.single-member-post main,
+    body.post-type-archive-member-post main {
+        display: none !important
+    }
+}
