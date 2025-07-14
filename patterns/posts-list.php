@@ -31,7 +31,7 @@
         <!-- /wp:column -->
     </div>
     <!-- /wp:columns -->
-    <!-- wp:post-excerpt {"moreText":"Read More","excerptLength":30} /-->
+    <!-- wp:post-excerpt {"excerptLength":30} /-->
     <!-- /wp:post-template -->
 
     <!-- wp:separator {"opacity":"css","className":"is-style-wide","style":{"spacing":{"margin":{"top":"var:preset|spacing|30","bottom":"var:preset|spacing|30"}}}} -->
