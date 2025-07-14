@@ -11,15 +11,16 @@
 <!-- wp:query {"queryId":14,"query":{"perPage":10,"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":true},"align":"wide","layout":{"type":"default"}} -->
 <div class="wp-block-query alignwide">
     <!-- wp:post-template -->
-    <!-- wp:separator {"opacity":"css","className":"has-text-color alignwide is-style-wide"} -->
-    <hr class="wp-block-separator has-css-opacity has-text-color alignwide is-style-wide" />
+    <!-- wp:separator {"opacity":"css","className":"is-style-wide","style":{"spacing":{"margin":{"top":"var:preset|spacing|30","bottom":"var:preset|spacing|30"}}}} -->
+    <hr class="wp-block-separator has-css-opacity is-style-wide"
+        style="margin-top:var(--wp--preset--spacing--30);margin-bottom:var(--wp--preset--spacing--30)" />
     <!-- /wp:separator -->
 
     <!-- wp:columns {"verticalAlignment":"center","align":"wide","style":{"spacing":{"margin":{"top":"0","bottom":"0"}}}} -->
     <div class="wp-block-columns alignwide are-vertically-aligned-center" style="margin-top:0;margin-bottom:0">
         <!-- wp:column {"verticalAlignment":"center","width":"72%"} -->
         <div class="wp-block-column is-vertically-aligned-center" style="flex-basis:72%">
-            <!-- wp:post-title {"isLink":true,"style":{"typography":{"lineHeight":"1.2"}},"fontSize":"large"} /-->
+            <!-- wp:post-title {"isLink":true,"style":{"fontSize":"large"} /-->
         </div>
         <!-- /wp:column -->
 
