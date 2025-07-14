@@ -13,6 +13,9 @@ Child theme of Stuart.
 
 == Changelog ==
 
+= 4.2.1 =
+* Adjust styles for post list pattern
+
 = 4.2.0 =
 * HTTP header to preload css
 * Add member-only custom post type
