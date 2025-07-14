@@ -36,24 +36,6 @@ function add_header_ftcunion_styles()
 add_action('send_headers', 'add_header_ftcunion_styles');
 
 /**
- * JavaScript load
- */
-function ftcunion_scripts()
-{
-    // Register theme script.
-    wp_register_script(
-        'ftcunion-member-only-links-script',
-        get_stylesheet_directory_uri() . '/assets/scripts/member-only-links.min.js',
-        array(),
-        wp_get_theme()->get('Version'),
-        false // Do not load in footer
-    );
-    // Enqueue theme script.
-    wp_enqueue_script('ftcunion-member-only-links-script');
-}
-add_action('wp_enqueue_scripts', 'ftcunion_scripts');
-
-/**
  * CDN Cache-Control
  */
 // Disable Cloudflare Cache on nocache_headers
