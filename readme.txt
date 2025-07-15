@@ -13,6 +13,9 @@ Child theme of Stuart.
 
 == Changelog ==
 
+= 4.2.2 =
+* Add styles for member-only login form
+
 = 4.2.1 =
 * Adjust styles for post list pattern
 

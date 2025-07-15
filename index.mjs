@@ -5,9 +5,6 @@ import svgToTinyDataUri from "mini-svg-data-uri";
 const inputCSSFile = "style.css";
 const outputCSSFile = "style.min.css";
 
-const inputJSFile = "assets/scripts/member-only-links.js";
-const outputJSFile = "assets/scripts/member-only-links.min.js";
-
 // Read style.css
 const input_css = readFileSync(inputCSSFile, "utf8");
 
@@ -36,10 +33,4 @@ for (const match of input_css.matchAll(svgRegex)) {
 minify.css(output_css).then((minifiedCss) => {
   writeFileSync(outputCSSFile, minifiedCss);
   console.log(`Minified CSS saved to ${outputCSSFile}`);
-});
-
-// Minify the JavaScript
-minify.js(readFileSync(inputJSFile, "utf8")).then((minifiedJs) => {
-  writeFileSync(outputJSFile, minifiedJs);
-  console.log(`Minified JS saved to ${outputJSFile}`);
 });

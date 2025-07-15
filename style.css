@@ -71,6 +71,42 @@ footer {
     min-height: 70px;
 }
 
+/* Member-only login form */
+form[action$="/union-access.php"] {
+    display: flex;
+    padding: 1px;
+    font-size: var(--wp--preset--font-size--normal);
+    overflow-x: clip;
+}
+
+form[action$="/union-access.php"] input[type="email"] {
+    flex-grow: 1;
+    padding: .8em;
+    border: none;
+    border-radius: .4em 0 0 .4em;
+    outline: 1px solid var(--wp--preset--color--foreground);
+}
+
+form[action$="/union-access.php"] button[type="submit"] {
+    padding: .6em 1.2em;
+    border: none;
+    border-radius: 0 .4em .4em 0;
+    outline: 1px solid var(--wp--preset--color--foreground);
+    font-family: inherit;
+    background-color: var(--wp--preset--color--secondary);
+    word-break: keep-all;
+}
+
+form[action$="/union-access.php"] button[type="submit"] svg {
+    vertical-align: middle;
+}
+
+form[action$="/union-access.php"] button[type="submit"]:hover,
+form[action$="/union-access.php"] button[type="submit"]:active,
+form[action$="/union-access.php"] button[type="submit"]:focus {
+    background-color: var(--wp--preset--color--foreground);
+}
+
 @media(width < 600px) {
 
     /* Hide some nav elements on mobile */
