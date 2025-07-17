@@ -79,7 +79,7 @@ form[action$="/union-access.php"] {
     overflow-x: clip;
 }
 
-form[action$="/union-access.php"] input[type="email"] {
+form[action$="/union-access.php"] input {
     flex-grow: 1;
     padding: .8em;
     border: none;
@@ -87,7 +87,7 @@ form[action$="/union-access.php"] input[type="email"] {
     outline: 1px solid var(--wp--preset--color--foreground);
 }
 
-form[action$="/union-access.php"] button[type="submit"] {
+form[action$="/union-access.php"] button {
     padding: .6em 1.2em;
     border: none;
     border-radius: 0 .4em .4em 0;
@@ -97,13 +97,13 @@ form[action$="/union-access.php"] button[type="submit"] {
     word-break: keep-all;
 }
 
-form[action$="/union-access.php"] button[type="submit"] svg {
+form[action$="/union-access.php"] button svg {
     vertical-align: middle;
 }
 
-form[action$="/union-access.php"] button[type="submit"]:hover,
-form[action$="/union-access.php"] button[type="submit"]:active,
-form[action$="/union-access.php"] button[type="submit"]:focus {
+form[action$="/union-access.php"] button:hover,
+form[action$="/union-access.php"] button:active,
+form[action$="/union-access.php"] button:focus {
     background-color: var(--wp--preset--color--foreground);
 }
 
@@ -147,6 +147,10 @@ form[action$="/union-access.php"] button[type="submit"]:focus {
     /* Unset min-height on member banner */
     .ftcunion-member-banner {
         min-height: unset;
+    }
+
+    .ftcunion-member-banner+ :has(nav) {
+        margin-top: 0;
     }
 }
 
