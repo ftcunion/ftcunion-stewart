@@ -158,10 +158,10 @@ function my_rewrite_flush()
 }
 
 /** 
- * Disable categories, tags, author pages, and date archives.
+ * Disable categories, tags, authors, and date archives.
  */
-// Remove categories and tags from posts
 add_action('init', function () {
+    // Remove categories and tags from posts
     global $wp_taxonomies;
     unregister_taxonomy_for_object_type('category', 'post');
     unregister_taxonomy_for_object_type('post_tag', 'post');
@@ -171,9 +171,8 @@ add_action('init', function () {
         unset($wp_taxonomies['post_tag']);
     unregister_taxonomy('category');
     unregister_taxonomy('post_tag');
-});
-// Remove author support from posts and pages
-add_action('init', function () {
+
+    // Remove author support from posts and pages
     remove_post_type_support('post', 'author');
     remove_post_type_support('page', 'author');
 });
