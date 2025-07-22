@@ -182,8 +182,6 @@ add_action('template_redirect', function () {
     if (is_category() || is_tag() || is_date() || is_author()) {
         global $wp_query;
         $wp_query->set_404();
-        status_header(404);
-        nocache_headers();
     }
 });
 
