@@ -157,6 +157,30 @@ function my_rewrite_flush()
     flush_rewrite_rules();
 }
 
+/** 
+ * Disable categories, tags, author pages, and date archives.
+ */
+add_action('init', function () {
+    global $wp_taxonomies;
+    unregister_taxonomy_for_object_type('category', 'post');
+    unregister_taxonomy_for_object_type('post_tag', 'post');
+    if (taxonomy_exists('category'))
+        unset($wp_taxonomies['category']);
+    if (taxonomy_exists('post_tag'))
+        unset($wp_taxonomies['post_tag']);
+    unregister_taxonomy('category');
+    unregister_taxonomy('post_tag');
+});
+// 404 if we get to the pages for categories, tags, dates, or authors
+add_action('template_redirect', function () {
+    if (is_category() || is_tag() || is_date() || is_author()) {
+        global $wp_query;
+        $wp_query->set_404();
+        status_header(404);
+        nocache_headers();
+    }
+});
+
 /****************************************
  * The below are snippets from WPCode
  ****************************************/
