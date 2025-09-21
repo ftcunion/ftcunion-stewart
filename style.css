@@ -72,14 +72,14 @@ footer {
 }
 
 /* Member-only login form */
-form[action$="/union-access.php"] {
+form[action$="/union-access.php"] .input-group {
     display: flex;
     padding: 1px;
     font-size: var(--wp--preset--font-size--normal);
     overflow-x: clip;
 }
 
-form[action$="/union-access.php"] input {
+form[action$="/union-access.php"] .input-group input[type="email"] {
     flex-grow: 1;
     padding: .8em;
     border: none;
@@ -87,7 +87,11 @@ form[action$="/union-access.php"] input {
     outline: 1px solid var(--wp--preset--color--foreground);
 }
 
-form[action$="/union-access.php"] button {
+form[action$="/union-access.php"] .input-group input[type="checkbox"]+label {
+    margin-left: 0.25em;
+}
+
+form[action$="/union-access.php"] .input-group button {
     padding: .6em 1.2em;
     border: none;
     border-radius: 0 .4em .4em 0;
