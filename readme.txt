@@ -13,6 +13,12 @@ Child theme of Stuart.
 
 == Changelog ==
 
+= 4.2.4 =
+* Adjust styles for member-only login form
+
+= 4.2.3 =
+* Adjust styles for member-only login form
+
 = 4.2.2 =
 * Add styles for member-only login form
 
