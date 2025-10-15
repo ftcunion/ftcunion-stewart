@@ -26,11 +26,11 @@ body {
 }
 
 /* Advanced spacing */
-:root p+ :where(.wp-block-list) {
+:root :is(p, .wp-block-list)+:where(.wp-block-list) {
     margin-block-start: 0;
 }
 
-:root :where(.wp-block-heading)+:where(.wp-block-heading) {
+:root :is(.wp-block-heading)+:where(.wp-block-heading) {
     padding-top: 0;
 }
 
