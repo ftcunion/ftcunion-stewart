@@ -488,7 +488,7 @@
 				"typography": {
 					"fontFamily": "var:preset|font-family|publicsans",
 					"fontSize": "var:preset|font-size|large",
-					"fontWeight": "700"
+					"fontWeight": "400"
 				}
 			},
 			"h4": {
