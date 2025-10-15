@@ -36,18 +36,6 @@
 			"defaultGradients": false,
 			"defaultPalette": false
 		},
-		"custom": {
-			"body": {
-				"typography": {
-					"lineHeight": "1.5"
-				}
-			},
-			"heading": {
-				"typography": {
-					"lineHeight": "1.2"
-				}
-			}
-		},
 		"spacing": {
 			"defaultSpacingSizes": false,
 			"spacingSizes": [
@@ -475,7 +463,8 @@
 				"typography": {
 					"fontFamily": "var:preset|font-family|merriweather",
 					"fontSize": "var:preset|font-size|huge"
-				}
+				},
+				"css": "font-size-adjust: ex-height 0.553"
 			},
 			"h2": {
 				"spacing": {
@@ -487,7 +476,8 @@
 					"fontFamily": "var:preset|font-family|merriweather",
 					"fontSize": "var:preset|font-size|extra-large",
 					"fontWeight": "400"
-				}
+				},
+				"css": "font-size-adjust: ex-height 0.553"
 			},
 			"h3": {
 				"spacing": {
@@ -496,9 +486,9 @@
 					}
 				},
 				"typography": {
-					"fontFamily": "var:preset|font-family|merriweather",
+					"fontFamily": "var:preset|font-family|publicsans",
 					"fontSize": "var:preset|font-size|large",
-					"fontWeight": "400"
+					"fontWeight": "700"
 				}
 			},
 			"h4": {
@@ -508,21 +498,21 @@
 					}
 				},
 				"typography": {
-					"fontFamily": "var:preset|font-family|merriweather",
+					"fontFamily": "var:preset|font-family|publicsans",
 					"fontSize": "var:preset|font-size|normal",
 					"fontWeight": "700"
 				}
 			},
 			"h5": {
 				"typography": {
-					"fontFamily": "var:preset|font-family|merriweather",
+					"fontFamily": "var:preset|font-family|publicsans",
 					"fontSize": "var:preset|font-size|small",
 					"fontWeight": "700"
 				}
 			},
 			"h6": {
 				"typography": {
-					"fontFamily": "var:preset|font-family|merriweather",
+					"fontFamily": "var:preset|font-family|publicsans",
 					"fontSize": "var:preset|font-size|small",
 					"textTransform": "uppercase"
 				}
@@ -532,10 +522,8 @@
 					"text": "var:preset|color|foreground"
 				},
 				"typography": {
-					"fontFamily": "var:preset|font-family|merriweather",
 					"lineHeight": "1.2"
-				},
-				"css": "font-size-adjust: ex-height 0.553"
+				}
 			},
 			"link": {
 				":hover": {
@@ -550,7 +538,7 @@
 		},
 		"typography": {
 			"fontFamily": "var:preset|font-family|publicsans",
-			"lineHeight": "1.5"
+			"lineHeight": "1.75"
 		}
 	},
 	"templateParts": [
