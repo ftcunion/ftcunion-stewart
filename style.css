@@ -25,6 +25,11 @@ body {
     font-size-adjust: cap-height 0.738;
 }
 
+/* Advanced spacing */
+:root p+ :where(.wp-block-list) {
+    margin-block-start: 0;
+}
+
 /* Stretch Footer */
 html,
 body {

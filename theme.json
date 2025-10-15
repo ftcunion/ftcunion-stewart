@@ -444,12 +444,7 @@
 				}
 			},
 			"core/list": {
-				"spacing": {
-					"margin": {
-						"top": "0"
-					}
-				},
-				"css": "padding-inline-start: 1.4rem;"
+				"css": "padding-inline-start: 1.4rem"
 			},
 			"core/list-item": {
 				"spacing": {
@@ -464,7 +459,7 @@
 			"text": "var:preset|color|black"
 		},
 		"spacing": {
-			"blockGap": "1.2rem",
+			"blockGap": "1.5rem",
 			"padding": {
 				"left": "var:preset|spacing|50",
 				"right": "var:preset|spacing|50"
@@ -483,6 +478,11 @@
 				}
 			},
 			"h2": {
+				"spacing": {
+					"padding": {
+						"top": "1.5rem"
+					}
+				},
 				"typography": {
 					"fontFamily": "var:preset|font-family|merriweather",
 					"fontSize": "var:preset|font-size|extra-large",
@@ -490,6 +490,11 @@
 				}
 			},
 			"h3": {
+				"spacing": {
+					"padding": {
+						"top": "1.2rem"
+					}
+				},
 				"typography": {
 					"fontFamily": "var:preset|font-family|merriweather",
 					"fontSize": "var:preset|font-size|large",
@@ -497,6 +502,11 @@
 				}
 			},
 			"h4": {
+				"spacing": {
+					"padding": {
+						"top": "0.6rem"
+					}
+				},
 				"typography": {
 					"fontFamily": "var:preset|font-family|merriweather",
 					"fontSize": "var:preset|font-size|normal",
@@ -522,7 +532,8 @@
 					"text": "var:preset|color|foreground"
 				},
 				"typography": {
-					"fontFamily": "var:preset|font-family|merriweather"
+					"fontFamily": "var:preset|font-family|merriweather",
+					"lineHeight": "1.2"
 				},
 				"css": "font-size-adjust: ex-height 0.553"
 			},
@@ -538,7 +549,8 @@
 			}
 		},
 		"typography": {
-			"fontFamily": "var:preset|font-family|publicsans"
+			"fontFamily": "var:preset|font-family|publicsans",
+			"lineHeight": "1.5"
 		}
 	},
 	"templateParts": [
