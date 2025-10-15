@@ -13,6 +13,9 @@ Child theme of Stuart.
 
 == Changelog ==
 
+= 5.0.0 =
+* Change spacing and font for h3-h6 to match body text
+
 = 4.2.4 =
 * Adjust styles for member-only login form
 
