@@ -30,6 +30,10 @@ body {
     margin-block-start: 0;
 }
 
+:root :where(.wp-block-heading)+:where(.wp-block-heading) {
+    padding-top: 0;
+}
+
 /* Stretch Footer */
 html,
 body {
