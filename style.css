@@ -156,6 +156,7 @@ form[action$="/union-access.php"] button:focus {
     /* Fix spacing of title when there is no logo */
     .wp-block-site-title {
         margin-block-start: var(--wp--style--block-gap) !important;
+        line-height: 1.5;
     }
 
     /* Unset min-height on member banner */

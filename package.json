@@ -26,6 +26,6 @@
   "homepage": "https://github.com/ftcunion/ftcunion-stewart#readme",
   "dependencies": {
     "mini-svg-data-uri": "^1.4.4",
-    "minify": "^14.0.0"
+    "minify": "^14.1.0"
   }
 }

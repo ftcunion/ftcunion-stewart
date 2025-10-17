@@ -407,7 +407,8 @@
 					"fontFamily": "var:preset|font-family|publicsans",
 					"fontSize": "var:preset|font-size|huge",
 					"fontWeight": "700",
-					"textTransform": "uppercase"
+					"textTransform": "uppercase",
+					"lineHeight": "1.2"
 				},
 				"css": "font-size-adjust: cap-height 0.738",
 				"elements": {
