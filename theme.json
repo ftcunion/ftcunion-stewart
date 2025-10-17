@@ -469,7 +469,7 @@
 			"h2": {
 				"spacing": {
 					"padding": {
-						"top": "1.5rem"
+						"top": "1rem"
 					}
 				},
 				"typography": {
@@ -482,7 +482,7 @@
 			"h3": {
 				"spacing": {
 					"padding": {
-						"top": "1.2rem"
+						"top": "0.75rem"
 					}
 				},
 				"typography": {
@@ -494,7 +494,7 @@
 			"h4": {
 				"spacing": {
 					"padding": {
-						"top": "0.6rem"
+						"top": "0.667rem"
 					}
 				},
 				"typography": {
