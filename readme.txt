@@ -13,6 +13,9 @@ Child theme of Stuart.
 
 == Changelog ==
 
+= 5.0.2 =
+* Simplify logo even more
+
 = 5.0.1 =
 * Tweak spacing and try out simplified logo
 
