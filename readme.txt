@@ -13,6 +13,9 @@ Child theme of Stuart.
 
 == Changelog ==
 
+= 5.0.1 =
+* Tweak spacing and try out simplified logo
+
 = 5.0.0 =
 * Change spacing and font for h3-h6 to match body text
 
