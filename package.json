@@ -1,6 +1,6 @@
 {
   "name": "ftcunion-stewart",
-  "version": "5.0.1",
+  "version": "5.0.2",
   "description": "WordPress theme for FTC Union Website (child of Stewart)",
   "main": "index.mjs",
   "scripts": {
