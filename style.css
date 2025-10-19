@@ -174,6 +174,35 @@ form[action$="/union-access.php"] button:focus {
 
     body.single-member-post main,
     body.post-type-archive-member-post main {
-        display: none !important
+        display: none !important;
+    }
+}
+
+/* Customize Mobile Navigation */
+
+.wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation__container {
+    font-size: var(--wp--preset--font-size--extra-large);
+    font-weight: 700;
+    gap: 0.5rem;
+}
+
+.wp-block-navigation__responsive-container.is-menu-open a {
+    text-decoration: none;
+}
+
+@media not (prefers-reduced-motion) {
+    .wp-block-navigation__responsive-container.is-menu-open {
+        animation: overlay-menu__custom-fade-in-animation 0.3s ease-in-out;
+        animation-fill-mode: forwards;
+    }
+}
+
+@keyframes overlay-menu__custom-fade-in-animation {
+    0% {
+        transform: translateX(100vw);
+    }
+
+    to {
+        transform: translateY(0);
     }
 }

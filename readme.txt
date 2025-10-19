@@ -13,6 +13,9 @@ Child theme of Stuart.
 
 == Changelog ==
 
+= 5.1.0 =
+* Adjust style of mobile menu
+
 = 5.0.2 =
 * Simplify logo even more
 
