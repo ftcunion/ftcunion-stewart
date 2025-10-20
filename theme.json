@@ -146,7 +146,7 @@
 							"src": "file:./assets/fonts/merriweather-italic-900.woff2"
 						}
 					],
-					"fontFamily": "Merriweather, Charter, Bitstream Charter, Cambria, Times New Roman, Times, serif",
+					"fontFamily": "Merriweather, Charter, Bitstream Charter, Cambria, New York Small, Times New Roman, Times, serif",
 					"name": "Merriweather",
 					"slug": "merriweather"
 				},
