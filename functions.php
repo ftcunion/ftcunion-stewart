@@ -27,7 +27,7 @@ if (! function_exists('twentytwentyfour_block_styles')) :
                     list-style-type: "\2605";
                     padding-inline-start: 1rem;
                 }
-                
+
                 ul.is-style-star-list li {
                     padding-inline-start: 0.4rem;
                 }',
@@ -49,7 +49,7 @@ if (! function_exists('twentytwentyfour_block_styles')) :
                     text-align: center;
                     overflow: visible;
                 }
-                
+
                 :root .wp-block-separator.is-style-star-separator::before {
                     color: currentColor;
                     content: "\2605\2605\2605";
@@ -75,7 +75,6 @@ if (! function_exists('twentytwentyfour_block_styles')) :
                     display: block;
                 }
 
-                /* Hide the star if the heading has no content, to avoid using empty headings to display the star only, which is an A11Y issue */
                 .is-style-star:empty:before {
                     content: none;
                 }
