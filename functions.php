@@ -4,11 +4,11 @@
  * Register block styles.
  */
 
-if (! function_exists('twentytwentyfour_block_styles')) :
+if (! function_exists('ftcunion_block_styles')) :
     /**
      * Register custom block styles
      *
-     * @since Twenty Twenty-Four 1.0
+     * @since ftcunion 5.2.0
      * @return void
      */
     function ftcunion_block_styles()
@@ -22,15 +22,8 @@ if (! function_exists('twentytwentyfour_block_styles')) :
                  * Styles for the custom star list block style
                  * https://github.com/WordPress/gutenberg/issues/51480
                  */
-                'inline_style' => '
-                ul.is-style-star-list {
-                    list-style-type: "\2605";
-                    padding-inline-start: 1rem;
-                }
-
-                ul.is-style-star-list li {
-                    padding-inline-start: 0.4rem;
-                }',
+                'inline_style' => 'ul.is-style-star-list{list-style-type:"\2605";padding-inline-start:1rem}' .
+                    'ul.is-style-star-list li{padding-inline-start:0.4rem}',
             )
         );
         register_block_style(
@@ -39,25 +32,8 @@ if (! function_exists('twentytwentyfour_block_styles')) :
                 'name'         => 'star-separator',
                 'label'        => __('Stars', 'ftcunion'),
 
-                'inline_style' => '
-                :root .wp-block-separator.is-style-star-separator {
-                    background: none !important;
-                    border: none !important;
-                    width: auto !important;
-                    height: auto !important;
-                    line-height: 1;
-                    text-align: center;
-                    overflow: visible;
-                }
-
-                :root .wp-block-separator.is-style-star-separator::before {
-                    color: currentColor;
-                    content: "\2605\2605\2605";
-                    font-family: serif;
-                    font-size: 1.5em;
-                    letter-spacing: 2em;
-                    padding-left: 2em;
-                }',
+                'inline_style' => ':root .wp-block-separator.is-style-star-separator{background:0 0!important;border:none!important;width:auto!important;height:auto!important;line-height:1;text-align:center;overflow:visible}' .
+                    ':root .wp-block-separator.is-style-star-separator::before{color:currentColor;content:"\2605\2605\2605";font-family:serif;font-size:1.5em;letter-spacing:2em;padding-left:2em}',
             )
         );
         register_block_style(
@@ -65,35 +41,12 @@ if (! function_exists('twentytwentyfour_block_styles')) :
             array(
                 'name'         => 'star',
                 'label'        => __('With star', 'ftcunion'),
-                'inline_style' => "
-                .is-style-star:before {
-                    content: '';
-                    width: 1.5rem;
-                    height: 3rem;
-                    background: var(--wp--preset--color--contrast-2, currentColor);
-                    clip-path: path('M11.523.684 18.124 21 .842 8.444h21.362L4.922 21z');
-                    display: block;
-                }
-
-                .is-style-star:empty:before {
-                    content: none;
-                }
-
-                .is-style-star:-moz-only-whitespace:before {
-                    content: none;
-                }
-
-                .is-style-star.has-text-align-center:before {
-                    margin: 0 auto;
-                }
-
-                .is-style-star.has-text-align-right:before {
-                    margin-left: auto;
-                }
-
-                .rtl .is-style-star.has-text-align-left:before {
-                    margin-right: auto;
-                }",
+                'inline_style' => ".is-style-star:before{content:'';width:1.5rem;height:3rem;background:var(--wp--preset--color--contrast-2,currentColor);clip-path:path('M11.523.684 18.124 21 .842 8.444h21.362L4.922 21z');display:block}" .
+                    '.is-style-star:empty:before{content:none}' .
+                    '.is-style-star:-moz-only-whitespace:before{content:none}' .
+                    '.is-style-star.has-text-align-center:before{margin:0 auto}' .
+                    '.is-style-star.has-text-align-right:before{margin-left:auto}' .
+                    '.rtl .is-style-star.has-text-align-left:before{margin-right:auto}',
             )
         );
     }
