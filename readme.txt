@@ -13,6 +13,9 @@ Child theme of Stuart.
 
 == Changelog ==
 
+= 5.2.0 =
+* Add custom block styles for star list, separator and heading
+
 = 5.1.0 =
 * Adjust style of mobile menu
 
