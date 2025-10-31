@@ -87,6 +87,11 @@ form[action$="/union-access.php"] .input-group {
     font-size: var(--wp--preset--font-size--normal);
     overflow-x: clip;
     margin-bottom: 0.5em;
+    align-items: center;
+}
+
+form[action$="/union-access.php"] .input-group:has(input[type="email"]) {
+    align-items: stretch;
 }
 
 form[action$="/union-access.php"] .input-group input[type="email"] {
