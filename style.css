@@ -223,9 +223,13 @@ body.ftcunion-dark .wp-social-link-ftcunion-social-link-dark {
 
 :root:has(body.ftcunion-dark) {
     --wp--preset--color--text: #fff;
-    --wp--preset--color--foreground: #759cd1;
+    --wp--preset--color--foreground: #b3c8e6;
     --wp--preset--color--background: #000;
-    --wp--preset--color--primary: #a4abb6;
-    --wp--preset--color--secondary: #74b8fb;
-    --wp--preset--color--tertiary: #e37b78;
+    --wp--preset--color--primary: #bbc0c9;
+    --wp--preset--color--secondary: #88c2fb;
+    --wp--preset--color--tertiary: #eb9c99;
+}
+
+body.ftcunion-dark .wp-block-site-title a::before {
+    content: url('./assets/images/site-title-simplified-inverse-svgo.svg');
 }
