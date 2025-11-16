@@ -7,6 +7,11 @@
 			"gradients": [],
 			"palette": [
 				{
+					"color": "#000000",
+					"name": "Text",
+					"slug": "text"
+				},
+				{
 					"color": "#1d3557",
 					"name": "Foreground",
 					"slug": "foreground"
@@ -445,7 +450,7 @@
 		},
 		"color": {
 			"background": "var:preset|color|background",
-			"text": "var:preset|color|black"
+			"text": "var:preset|color|text"
 		},
 		"spacing": {
 			"blockGap": "1.5rem",

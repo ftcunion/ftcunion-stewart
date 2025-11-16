@@ -1,4 +1,4 @@
-import { readFileSync, writeFileSync } from "fs";
+import { readFileSync, writeFileSync, readdirSync } from "fs";
 import { minify } from "minify";
 import svgToTinyDataUri from "mini-svg-data-uri";
 
@@ -34,3 +34,14 @@ minify.css(output_css).then((minifiedCss) => {
   writeFileSync(outputCSSFile, minifiedCss);
   console.log(`Minified CSS saved to ${outputCSSFile}`);
 });
+
+// Minify the javascript files
+const jsFiles = readdirSync("assets/scripts").filter(file => file.endsWith(".js"));
+for (const file of jsFiles) {
+  const inputPath = `assets/scripts/${file}`;
+  const outputPath = `assets/scripts/${file.replace('.js', '.min.js')}`;
+  minify(inputPath).then((minifiedJs) => {
+    writeFileSync(outputPath, minifiedJs);
+    console.log(`Minified JS saved to ${outputPath}`);
+  });
+}

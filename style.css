@@ -211,3 +211,21 @@ form[action$="/union-access.php"] button:focus {
         transform: translateY(0);
     }
 }
+
+/* Light and Dark Mode Toggle */
+body:not(.ftcunion-dark) .wp-social-link-ftcunion-social-link-light {
+    display: none !important;
+}
+
+body.ftcunion-dark .wp-social-link-ftcunion-social-link-dark {
+    display: none !important;
+}
+
+:root:has(body.ftcunion-dark) {
+    --wp--preset--color--text: #fff;
+    --wp--preset--color--foreground: #759cd1;
+    --wp--preset--color--background: #000;
+    --wp--preset--color--primary: #a4abb6;
+    --wp--preset--color--secondary: #74b8fb;
+    --wp--preset--color--tertiary: #e37b78;
+}
