@@ -39,6 +39,10 @@
         <!-- wp:social-link {"url":"#","service":"github"} /-->
 
         <!-- wp:social-link {"url":"#","service":"mail"} /-->
+
+        <!-- wp:social-link {"url":"#","service":"ftcunion-social-link-dark"} /-->
+
+        <!-- wp:social-link {"url":"#","service":"ftcunion-social-link-light"} /-->
     </ul>
     <!-- /wp:social-links -->
 </div>
