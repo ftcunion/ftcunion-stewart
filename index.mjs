@@ -36,7 +36,9 @@ minify.css(output_css).then((minifiedCss) => {
 });
 
 // Minify the javascript files
-const jsFiles = readdirSync("assets/scripts").filter(file => file.endsWith(".js"));
+const jsFiles = readdirSync("assets/scripts")
+  .filter(file => file.endsWith(".js"))
+  .filter(file => !file.endsWith(".min.js"));
 for (const file of jsFiles) {
   const inputPath = `assets/scripts/${file}`;
   const outputPath = `assets/scripts/${file.replace('.js', '.min.js')}`;
