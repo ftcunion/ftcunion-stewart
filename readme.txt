@@ -13,6 +13,9 @@ Child theme of Stuart.
 
 == Changelog ==
 
+= 6.0.0 =
+* Add light and dark mode buttons to sidebar social links
+
 = 5.2.0 =
 * Add custom block styles for star list, separator and heading
 
