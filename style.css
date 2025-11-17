@@ -222,7 +222,7 @@ body.ftcunion-dark .wp-social-link-ftcunion-social-link-dark {
 }
 
 :root:has(body.ftcunion-dark) {
-    --wp--preset--color--text: #e8e8e8;
+    --wp--preset--color--text: #eee;
     --wp--preset--color--foreground: #fff;
     --wp--preset--color--background: #000;
     --wp--preset--color--primary: #bbc0c9;
