@@ -13,6 +13,9 @@ Child theme of Stuart.
 
 == Changelog ==
 
+= 6.0.2 =
+* Fix flash of light on dark mode toggle
+
 = 6.0.1 =
 * Adjust colors for dark mode
 
