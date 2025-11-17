@@ -13,6 +13,9 @@ Child theme of Stuart.
 
 == Changelog ==
 
+= 6.0.1 =
+* Adjust colors for dark mode
+
 = 6.0.0 =
 * Add light and dark mode buttons to sidebar social links
 
