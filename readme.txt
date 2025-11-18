@@ -13,6 +13,10 @@ Child theme of Stuart.
 
 == Changelog ==
 
+= 6.0.3 =
+* Adjust colors for membership login in dark mode
+* Tweak social icon spacing on mobile
+
 = 6.0.2 =
 * Fix flash of light on dark mode toggle
 
