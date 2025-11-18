@@ -100,6 +100,8 @@ form[action$="/union-access.php"] .input-group input[type="email"] {
     border: none;
     border-radius: .4em 0 0 .4em;
     outline: 1px solid var(--wp--preset--color--foreground);
+    background: var(--wp--preset--color--background);
+    color: var(--wp--preset--color--text);
 }
 
 form[action$="/union-access.php"] .input-group input[type="checkbox"]+label {
@@ -227,7 +229,7 @@ form[action$="/union-access.php"] button:focus {
     --wp--preset--color--background: #000;
     --wp--preset--color--primary: #bbc0c9;
     --wp--preset--color--secondary: #88c2fb;
-    --wp--preset--color--tertiary: #eb9c99;
+    --wp--preset--color--tertiary: #e78b88;
 }
 
 :root.ftcunion-dark .wp-block-site-title a::before {
