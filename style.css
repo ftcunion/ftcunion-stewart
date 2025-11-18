@@ -162,7 +162,7 @@ form[action$="/union-access.php"] button:focus {
 
     /* Adjust spacing of social icons */
     :root .is-layout-flow>.wp-block-social-links {
-        margin-block-start: 0.6rem;
+        margin-block-start: 0.85rem;
     }
 
     /* Fix spacing of title when there is no logo */
