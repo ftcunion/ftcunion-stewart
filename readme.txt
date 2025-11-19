@@ -13,6 +13,9 @@ Child theme of Stuart.
 
 == Changelog ==
 
+= 6.1.0 =
+* Adjust colors for consistency across light and dark modes
+
 = 6.0.4 =
 * Tweak social icon spacing on mobile
 
