@@ -232,9 +232,6 @@ form[action$="/union-access.php"] button:focus {
     --wp--preset--color--text: #eee;
     --wp--preset--color--foreground: #fff;
     --wp--preset--color--background: #000;
-    --wp--preset--color--primary: #bbc0c9;
-    --wp--preset--color--secondary: #88c2fb;
-    --wp--preset--color--tertiary: #e78b88;
 }
 
 :root.ftcunion-dark .wp-block-site-title a::before {

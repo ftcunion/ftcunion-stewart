@@ -7,34 +7,39 @@
 			"gradients": [],
 			"palette": [
 				{
-					"color": "#000000",
+					"color": "#000",
 					"name": "Text",
 					"slug": "text"
 				},
 				{
-					"color": "#1d3557",
+					"color": "#0c1b33",
 					"name": "Foreground",
 					"slug": "foreground"
 				},
 				{
-					"color": "#f2f3f4",
+					"color": "#fff",
 					"name": "Background",
 					"slug": "background"
 				},
 				{
-					"color": "#414751",
+					"color": "#9f6b0c",
 					"name": "Primary",
 					"slug": "primary"
 				},
 				{
-					"color": "#065cb4",
+					"color": "#2f72de",
 					"name": "Secondary",
 					"slug": "secondary"
 				},
 				{
-					"color": "#cc2e28",
+					"color": "#e5212a",
 					"name": "Tertiary",
 					"slug": "tertiary"
+				},
+				{
+					"color": "#777",
+					"name": "Gray",
+					"slug": "gray"
 				}
 			],
 			"defaultDuotone": false,
