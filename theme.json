@@ -12,17 +12,17 @@
 					"slug": "text"
 				},
 				{
-					"color": "#0c1b33",
+					"color": "#061a40",
 					"name": "Foreground",
 					"slug": "foreground"
 				},
 				{
-					"color": "#fff",
-					"name": "Background",
+					"color": "#f5f9e9",
+					"name": "background",
 					"slug": "background"
 				},
 				{
-					"color": "#9f6b0c",
+					"color": "#c25335",
 					"name": "Primary",
 					"slug": "primary"
 				},

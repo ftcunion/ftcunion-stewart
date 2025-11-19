@@ -7,7 +7,7 @@ Description: Child theme of Stuart
 Requires at least: 6.1
 Tested up to: 6.8.1
 Requires PHP: 7.0
-Version: 6.1.0
+Version: 6.0.4
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Template: stewart
@@ -229,9 +229,12 @@ form[action$="/union-access.php"] button:focus {
 }
 
 :root.ftcunion-dark {
-    --wp--preset--color--text: #eee;
+    --wp--preset--color--text: #ebebeb;
     --wp--preset--color--foreground: #fff;
     --wp--preset--color--background: #000;
+    --wp--preset--color--primary: #ca5d3f;
+    --wp--preset--color--secondary: #4f88e3;
+    --wp--preset--color--tertiary: #e7363f; 
 }
 
 :root.ftcunion-dark .wp-block-site-title a::before {
