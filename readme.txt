@@ -13,6 +13,9 @@ Child theme of Stuart.
 
 == Changelog ==
 
+= 6.1.2 =
+* Change color of the scale pattern
+
 = 6.1.1 =
 * Adjust colors for greater readability in dark mode
 
