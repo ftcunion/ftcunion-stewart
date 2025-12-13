@@ -9,12 +9,12 @@
 				{
 					"color": "#000",
 					"name": "Text",
-					"slug": "text"
+					"slug": "foreground-text"
 				},
 				{
 					"color": "#061a40",
-					"name": "Foreground",
-					"slug": "foreground"
+					"name": "Headers",
+					"slug": "foreground-headers"
 				},
 				{
 					"color": "#f1f1f1",
@@ -366,7 +366,7 @@
 		"blocks": {
 			"core/button": {
 				"color": {
-					"background": "var:preset|color|foreground",
+					"background": "var:preset|color|foreground-headers",
 					"text": "var:preset|color|background"
 				}
 			},
@@ -455,7 +455,7 @@
 		},
 		"color": {
 			"background": "var:preset|color|background",
-			"text": "var:preset|color|text"
+			"text": "var:preset|color|foreground-text"
 		},
 		"spacing": {
 			"blockGap": "1.5rem",
@@ -530,7 +530,7 @@
 			},
 			"heading": {
 				"color": {
-					"text": "var:preset|color|foreground"
+					"text": "var:preset|color|foreground-headers"
 				},
 				"typography": {
 					"lineHeight": "1.2"
@@ -539,7 +539,7 @@
 			"link": {
 				":hover": {
 					"color": {
-						"text": "var:preset|color|foreground"
+						"text": "var:preset|color|foreground-headers"
 					}
 				},
 				"color": {
