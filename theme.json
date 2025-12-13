@@ -37,17 +37,17 @@
 					"slug": "tertiary"
 				},
 				{
-					"color": "#ab6400",
+					"color": "#aa6400",
 					"name": "Primary (white on dark)",
 					"slug": "primary-text-dark"
 				},
 				{
-					"color": "#0d74ce",
+					"color": "#0c74ce",
 					"name": "Secondary (white on dark)",
 					"slug": "secondary-text-dark"
 				},
 				{
-					"color": "#dc3e42",
+					"color": "#db3e42",
 					"name": "Tertiary (white on dark)",
 					"slug": "tertiary-text-dark"
 				},
