@@ -99,9 +99,9 @@ form[action$="/union-access.php"] .input-group input[type="email"] {
     padding: .8em;
     border: none;
     border-radius: .4em 0 0 .4em;
-    outline: 1px solid var(--wp--preset--color--foreground);
+    outline: 1px solid var(--wp--preset--color--foreground-headers);
     background: var(--wp--preset--color--background);
-    color: var(--wp--preset--color--text);
+    color: var(--wp--preset--color--foreground-text);
 }
 
 form[action$="/union-access.php"] .input-group input[type="checkbox"]+label {
@@ -112,7 +112,7 @@ form[action$="/union-access.php"] .input-group button {
     padding: .6em 1.2em;
     border: none;
     border-radius: 0 .4em .4em 0;
-    outline: 1px solid var(--wp--preset--color--foreground);
+    outline: 1px solid var(--wp--preset--color--foreground-headers);
     font-family: inherit;
     background-color: var(--wp--preset--color--secondary);
     word-break: keep-all;
@@ -125,7 +125,7 @@ form[action$="/union-access.php"] button svg {
 form[action$="/union-access.php"] button:hover,
 form[action$="/union-access.php"] button:active,
 form[action$="/union-access.php"] button:focus {
-    background-color: var(--wp--preset--color--foreground);
+    background-color: var(--wp--preset--color--foreground-headers);
 }
 
 @media(width < 600px) {
@@ -233,8 +233,12 @@ form[action$="/union-access.php"] button:focus {
     --wp--preset--color--foreground-headers: #f1f1f1;
     --wp--preset--color--background: #000;
     --wp--preset--color--primary: #ffa057;
-    --wp--preset--color--secondary: #70B8FF;
+    --wp--preset--color--secondary: #70b8ff;
     --wp--preset--color--tertiary: #e5484d;
+    --wp--preset--color--primary-text-dark: var(--wp--preset--color--foreground-text);
+    --wp--preset--color--secondary-text-dark: var(--wp--preset--color--foreground-text);
+    --wp--preset--color--tertiary-text-dark: var(--wp--preset--color--foreground-text);
+    color-scheme: dark;
 }
 
 :root.ftcunion-dark .wp-block-site-title a::before {
