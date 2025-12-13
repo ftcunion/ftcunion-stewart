@@ -17,22 +17,22 @@
 					"slug": "foreground"
 				},
 				{
-					"color": "#fff",
+					"color": "#f1f1f1",
 					"name": "background",
 					"slug": "background"
 				},
 				{
-					"color": "#c25335",
+					"color": "#ab6400",
 					"name": "Primary",
 					"slug": "primary"
 				},
 				{
-					"color": "#2f72de",
+					"color": "#0d74ce",
 					"name": "Secondary",
 					"slug": "secondary"
 				},
 				{
-					"color": "#e5212a",
+					"color": "#dc3e42",
 					"name": "Tertiary",
 					"slug": "tertiary"
 				},
