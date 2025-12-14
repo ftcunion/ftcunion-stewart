@@ -13,6 +13,9 @@ Child theme of Stuart.
 
 == Changelog ==
 
+= 7.0.0 =
+* Dark mode enabled if user agent prefers it
+
 = 6.1.2 =
 * Change color of the scale pattern
 
