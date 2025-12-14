@@ -1,11 +1,18 @@
-// Check if we have a stored preference for dark mode
-if (localStorage.getItem('ftcunion-color-mode') === 'dark') {
-    // Add the dark class to the html tag
-    document.documentElement.classList.add('ftcunion-dark');
-} else if (localStorage.getItem('ftcunion-color-mode') === 'light') {
-    // Add the light class to the html tag
-    document.documentElement.classList.add('ftcunion-light');
+// Define a function which returns the current color mode based on local storage or system preference
+function getCurrentColorMode() {
+    if (localStorage.getItem('ftcunion-color-mode') === 'dark') {
+        return 'ftcunion-dark';
+    } else if (localStorage.getItem('ftcunion-color-mode') === 'light') {
+        return 'ftcunion-light';
+    } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        return 'ftcunion-dark';
+    } else {
+        return 'ftcunion-light';
+    }
 }
+
+// Add the color mode class to the html tag
+document.documentElement.classList.add(getCurrentColorMode());
 
 // Add event listeners to the buttons to set the local storage and update the body class
 document.addEventListener('DOMContentLoaded', function () {

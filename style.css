@@ -18,6 +18,7 @@ Tags: two-columns, custom-colors, custom-menu, custom-logo, editor-style, featur
 /* Stable scrollbar */
 :root {
     scrollbar-gutter: stable;
+    color-scheme: light;
 }
 
 /* Font metrics */
@@ -229,16 +230,16 @@ form[action$="/union-access.php"] button:focus {
 }
 
 :root.ftcunion-dark {
+    color-scheme: dark;
     --wp--preset--color--foreground-text: #dfdfdf;
     --wp--preset--color--foreground-headers: #f1f1f1;
     --wp--preset--color--background: #000;
     --wp--preset--color--primary: #ffa057;
     --wp--preset--color--secondary: #70b8ff;
     --wp--preset--color--tertiary: #e5484d;
-    --wp--preset--color--primary-text-dark: var(--wp--preset--color--foreground-text);
-    --wp--preset--color--secondary-text-dark: var(--wp--preset--color--foreground-text);
-    --wp--preset--color--tertiary-text-dark: var(--wp--preset--color--foreground-text);
-    color-scheme: dark;
+    --wp--preset--color--primary-text-dark: #dfdfdf;
+    --wp--preset--color--secondary-text-dark: #dfdfdf;
+    --wp--preset--color--tertiary-text-dark: #dfdfdf;
 }
 
 :root.ftcunion-dark .wp-block-site-title a::before {
