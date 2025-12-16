@@ -113,200 +113,14 @@
 			"defaultFontSizes": false,
 			"fontFamilies": [
 				{
-					"fontFace": [
-						{
-							"fontFamily": "Merriweather",
-							"fontStyle": "normal",
-							"fontWeight": "300",
-							"fontDisplay": "swap",
-							"src": "file:./assets/fonts/merriweather-normal-300.woff2"
-						},
-						{
-							"fontFamily": "Merriweather",
-							"fontStyle": "normal",
-							"fontWeight": "400",
-							"fontDisplay": "swap",
-							"src": "file:./assets/fonts/merriweather-normal-400.woff2"
-						},
-						{
-							"fontFamily": "Merriweather",
-							"fontStyle": "normal",
-							"fontWeight": "700",
-							"fontDisplay": "swap",
-							"src": "file:./assets/fonts/merriweather-normal-700.woff2"
-						},
-						{
-							"fontFamily": "Merriweather",
-							"fontStyle": "normal",
-							"fontWeight": "900",
-							"fontDisplay": "swap",
-							"src": "file:./assets/fonts/merriweather-normal-900.woff2"
-						},
-						{
-							"fontFamily": "Merriweather",
-							"fontStyle": "italic",
-							"fontWeight": "300",
-							"fontDisplay": "swap",
-							"src": "file:./assets/fonts/merriweather-italic-300.woff2"
-						},
-						{
-							"fontFamily": "Merriweather",
-							"fontStyle": "italic",
-							"fontWeight": "400",
-							"fontDisplay": "swap",
-							"src": "file:./assets/fonts/merriweather-italic-400.woff2"
-						},
-						{
-							"fontFamily": "Merriweather",
-							"fontStyle": "italic",
-							"fontWeight": "700",
-							"fontDisplay": "swap",
-							"src": "file:./assets/fonts/merriweather-italic-700.woff2"
-						},
-						{
-							"fontFamily": "Merriweather",
-							"fontStyle": "italic",
-							"fontWeight": "900",
-							"fontDisplay": "swap",
-							"src": "file:./assets/fonts/merriweather-italic-900.woff2"
-						}
-					],
-					"fontFamily": "Merriweather, New York Small, Charter, Bitstream Charter, Cambria, Times New Roman, Times, serif",
-					"name": "Merriweather",
-					"slug": "merriweather"
+					"fontFamily": "New York Small, Charter, Bitstream Charter, Cambria, Times New Roman, Times, serif",
+					"name": "Transitional Serif",
+					"slug": "transitional-serif"
 				},
 				{
-					"fontFace": [
-						{
-							"fontFamily": "Public Sans",
-							"fontStyle": "normal",
-							"fontWeight": "100",
-							"fontDisplay": "swap",
-							"src": "file:./assets/fonts/publicsans-normal-100.woff2"
-						},
-						{
-							"fontFamily": "Public Sans",
-							"fontStyle": "normal",
-							"fontWeight": "200",
-							"fontDisplay": "swap",
-							"src": "file:./assets/fonts/publicsans-normal-200.woff2"
-						},
-						{
-							"fontFamily": "Public Sans",
-							"fontStyle": "normal",
-							"fontWeight": "300",
-							"fontDisplay": "swap",
-							"src": "file:./assets/fonts/publicsans-normal-300.woff2"
-						},
-						{
-							"fontFamily": "Public Sans",
-							"fontStyle": "normal",
-							"fontWeight": "400",
-							"fontDisplay": "swap",
-							"src": "file:./assets/fonts/publicsans-normal-400.woff2"
-						},
-						{
-							"fontFamily": "Public Sans",
-							"fontStyle": "normal",
-							"fontWeight": "500",
-							"fontDisplay": "swap",
-							"src": "file:./assets/fonts/publicsans-normal-500.woff2"
-						},
-						{
-							"fontFamily": "Public Sans",
-							"fontStyle": "normal",
-							"fontWeight": "600",
-							"fontDisplay": "swap",
-							"src": "file:./assets/fonts/publicsans-normal-600.woff2"
-						},
-						{
-							"fontFamily": "Public Sans",
-							"fontStyle": "normal",
-							"fontWeight": "700",
-							"fontDisplay": "swap",
-							"src": "file:./assets/fonts/publicsans-normal-700.woff2"
-						},
-						{
-							"fontFamily": "Public Sans",
-							"fontStyle": "normal",
-							"fontWeight": "800",
-							"fontDisplay": "swap",
-							"src": "file:./assets/fonts/publicsans-normal-800.woff2"
-						},
-						{
-							"fontFamily": "Public Sans",
-							"fontStyle": "normal",
-							"fontWeight": "900",
-							"fontDisplay": "swap",
-							"src": "file:./assets/fonts/publicsans-normal-900.woff2"
-						},
-						{
-							"fontFamily": "Public Sans",
-							"fontStyle": "italic",
-							"fontWeight": "100",
-							"fontDisplay": "swap",
-							"src": "file:./assets/fonts/publicsans-italic-100.woff2"
-						},
-						{
-							"fontFamily": "Public Sans",
-							"fontStyle": "italic",
-							"fontWeight": "200",
-							"fontDisplay": "swap",
-							"src": "file:./assets/fonts/publicsans-italic-200.woff2"
-						},
-						{
-							"fontFamily": "Public Sans",
-							"fontStyle": "italic",
-							"fontWeight": "300",
-							"fontDisplay": "swap",
-							"src": "file:./assets/fonts/publicsans-italic-300.woff2"
-						},
-						{
-							"fontFamily": "Public Sans",
-							"fontStyle": "italic",
-							"fontWeight": "400",
-							"fontDisplay": "swap",
-							"src": "file:./assets/fonts/publicsans-italic-400.woff2"
-						},
-						{
-							"fontFamily": "Public Sans",
-							"fontStyle": "italic",
-							"fontWeight": "500",
-							"fontDisplay": "swap",
-							"src": "file:./assets/fonts/publicsans-italic-500.woff2"
-						},
-						{
-							"fontFamily": "Public Sans",
-							"fontStyle": "italic",
-							"fontWeight": "600",
-							"fontDisplay": "swap",
-							"src": "file:./assets/fonts/publicsans-italic-600.woff2"
-						},
-						{
-							"fontFamily": "Public Sans",
-							"fontStyle": "italic",
-							"fontWeight": "700",
-							"fontDisplay": "swap",
-							"src": "file:./assets/fonts/publicsans-italic-700.woff2"
-						},
-						{
-							"fontFamily": "Public Sans",
-							"fontStyle": "italic",
-							"fontWeight": "800",
-							"fontDisplay": "swap",
-							"src": "file:./assets/fonts/publicsans-italic-800.woff2"
-						},
-						{
-							"fontFamily": "Public Sans",
-							"fontStyle": "italic",
-							"fontWeight": "900",
-							"fontDisplay": "swap",
-							"src": "file:./assets/fonts/publicsans-italic-900.woff2"
-						}
-					],
-					"fontFamily": "Public Sans, Libre Franklin, SF Pro Text, Franklin Gothic Book, source-sans-pro, system-ui, sans-serif",
-					"name": "Public Sans",
-					"slug": "publicsans"
+					"fontFamily": "system-ui, sans-serif",
+					"name": "System UI",
+					"slug": "systemui"
 				}
 			],
 			"fontSizes": [
@@ -413,7 +227,7 @@
 			},
 			"core/post-title": {
 				"typography": {
-					"fontFamily": "var:preset|font-family|merriweather"
+					"fontFamily": "var:preset|font-family|transitional-serif"
 				},
 				"css": "font-size-adjust: ex-height 0.553"
 			},
@@ -429,7 +243,7 @@
 			},
 			"core/site-title": {
 				"typography": {
-					"fontFamily": "var:preset|font-family|publicsans",
+					"fontFamily": "var:preset|font-family|systemui",
 					"fontSize": "var:preset|font-size|huge",
 					"fontWeight": "700",
 					"textTransform": "uppercase",
@@ -487,7 +301,7 @@
 			},
 			"h1": {
 				"typography": {
-					"fontFamily": "var:preset|font-family|merriweather",
+					"fontFamily": "var:preset|font-family|transitional-serif",
 					"fontSize": "var:preset|font-size|huge"
 				},
 				"css": "font-size-adjust: ex-height 0.553"
@@ -499,7 +313,7 @@
 					}
 				},
 				"typography": {
-					"fontFamily": "var:preset|font-family|merriweather",
+					"fontFamily": "var:preset|font-family|transitional-serif",
 					"fontSize": "var:preset|font-size|extra-large",
 					"fontWeight": "400"
 				},
@@ -512,7 +326,7 @@
 					}
 				},
 				"typography": {
-					"fontFamily": "var:preset|font-family|publicsans",
+					"fontFamily": "var:preset|font-family|systemui",
 					"fontSize": "var:preset|font-size|large",
 					"fontWeight": "400"
 				}
@@ -524,21 +338,21 @@
 					}
 				},
 				"typography": {
-					"fontFamily": "var:preset|font-family|publicsans",
+					"fontFamily": "var:preset|font-family|systemui",
 					"fontSize": "var:preset|font-size|normal",
 					"fontWeight": "700"
 				}
 			},
 			"h5": {
 				"typography": {
-					"fontFamily": "var:preset|font-family|publicsans",
+					"fontFamily": "var:preset|font-family|systemui",
 					"fontSize": "var:preset|font-size|small",
 					"fontWeight": "700"
 				}
 			},
 			"h6": {
 				"typography": {
-					"fontFamily": "var:preset|font-family|publicsans",
+					"fontFamily": "var:preset|font-family|systemui",
 					"fontSize": "var:preset|font-size|small",
 					"textTransform": "uppercase"
 				}
@@ -563,7 +377,7 @@
 			}
 		},
 		"typography": {
-			"fontFamily": "var:preset|font-family|publicsans",
+			"fontFamily": "var:preset|font-family|systemui",
 			"lineHeight": "1.75"
 		}
 	},
