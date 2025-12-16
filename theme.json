@@ -113,7 +113,7 @@
 			"defaultFontSizes": false,
 			"fontFamilies": [
 				{
-					"fontFamily": "New York Small, Charter, Bitstream Charter, Cambria, Times New Roman, Times, serif",
+					"fontFamily": "-apple-system-ui-serif, New York Small, Charter, Bitstream Charter, Merriweather, Libre Baskerville, Baskerville Old Face, Baskerville, Times New Roman, Times, serif",
 					"name": "Transitional Serif",
 					"slug": "transitional-serif"
 				},
