@@ -113,7 +113,7 @@
 			"defaultFontSizes": false,
 			"fontFamilies": [
 				{
-					"fontFamily": "Charter, Bitstream Charter, Merriweather, Georgia, ui-serif, serif",
+					"fontFamily": "Charter, Bitstream Charter, Sitka Text, Georgia, ui-serif, serif",
 					"name": "Transitional Serif",
 					"slug": "transitional-serif"
 				},
