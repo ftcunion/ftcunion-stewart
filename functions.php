@@ -144,6 +144,15 @@ add_filter('wp_headers', function ($headers) {
 });
 
 /**
+ * Add svg favicon from ./assets/images/favicon-svgo.svg
+ */
+function ftcunion_favicon()
+{
+    echo '<link rel="icon" href="' . get_stylesheet_directory_uri() . '/assets/images/favicon-svgo.svg' . '" type="image/svg+xml" />';
+}
+add_action('wp_head', 'ftcunion_favicon');
+
+/**
  * Filter the default theme.json data.
  *
  * Removes default duotone, gradients and color palette values provided by WordPress core.
