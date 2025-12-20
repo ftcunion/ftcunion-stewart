@@ -229,7 +229,7 @@
 				"typography": {
 					"fontFamily": "var:preset|font-family|transitional-serif"
 				},
-				"css": "font-size-adjust: ex-height 0.553"
+				"css": "font-variant-numeric: lining-nums"
 			},
 			"core/site-tagline": {
 				"typography": {
@@ -304,7 +304,7 @@
 					"fontFamily": "var:preset|font-family|transitional-serif",
 					"fontSize": "var:preset|font-size|huge"
 				},
-				"css": "font-size-adjust: ex-height 0.553"
+				"css": "font-variant-numeric: lining-nums"
 			},
 			"h2": {
 				"spacing": {
@@ -317,7 +317,7 @@
 					"fontSize": "var:preset|font-size|extra-large",
 					"fontWeight": "400"
 				},
-				"css": "font-size-adjust: ex-height 0.553"
+				"css": "font-variant-numeric: lining-nums"
 			},
 			"h3": {
 				"spacing": {
