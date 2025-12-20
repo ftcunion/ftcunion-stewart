@@ -13,6 +13,9 @@ Child theme of Stuart.
 
 == Changelog ==
 
+= 7.1.0 =
+* Remove web fonts
+
 = 7.0.0 =
 * Dark mode enabled if user agent prefers it
 
