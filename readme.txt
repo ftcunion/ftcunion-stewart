@@ -13,7 +13,7 @@ Child theme of Stuart.
 
 == Changelog ==
 
-= 7.1.2 =
+= 7.1.3 =
 * Smooth scroll
 
 = 7.1.1 =
