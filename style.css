@@ -42,13 +42,18 @@ body {
 }
 
 .wp-site-blocks {
-    overflow-y: hidden;
-    min-height: 100%;
+    min-height: 100vh;
+    min-height: 100svh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Grow element before footer to push it to the bottom */
+.wp-site-blocks>:has(+ footer) {
+    flex-grow: 1;
 }
 
 footer {
-    padding-bottom: 100vh;
-    margin-block-end: -100vh !important;
     box-shadow: inset 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
     margin-top: 2.75rem;
 }
