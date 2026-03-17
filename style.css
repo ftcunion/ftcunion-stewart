@@ -21,6 +21,12 @@ Tags: two-columns, custom-colors, custom-menu, custom-logo, editor-style, featur
     color-scheme: light;
 }
 
+@media(prefers-reduced-motion: no-motion) {
+    :root {
+        scroll-behavior: smooth;
+    }
+}
+
 /* Font metrics */
 body {
     font-size-adjust: cap-height 0.738;

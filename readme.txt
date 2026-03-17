@@ -13,6 +13,9 @@ Child theme of Stuart.
 
 == Changelog ==
 
+= 7.1.2 =
+* Smooth scroll
+
 = 7.1.1 =
 * Fix issue with anchor spacing
 
